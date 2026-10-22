@@ -38,25 +38,44 @@ AKS_Root\
     train.py                       train from COCO or cone-only weights
     finetune.py                    fine-tune the best model on merged\, compare old vs new
     merged\                        merged cone/person/kart dataset (data.yaml)
-    aks_obj_detection.rvc2.tar.xz  converted model the camera scripts load (do NOT extract)
     yolo-env\                      training venv
   oak-template\                    OAK-D pipelines (based on the Luxonis template)
     main.py                        viewer pipeline (browser visualizer)
     oak_obstacles.py               detections + stereo depth -> obstacle list
   data_collection\
-    scripts\record_frames.py       save OAK-D frames for labeling
+    scripts\record_frames.py       save OAK-D frames for labeling (to $AKS_DATA\raw)
     prelabel.py                    pre-label frames for Label Studio (YOLO-World or own .pt)
     merge_labelstudio.py           merge a Label Studio export into the dataset, split by session
-    raw\<session>\                 recorded frames, one folder per session
+    raw\<session>\                 recorded frames, one folder per session (laptop: AKS_DATA points here)
     exports\                       Label Studio YOLO exports
   fsoco_work\                      FSOCO -> YOLO conversion (convert.py, prepare_dataset.py)
   cone_dataset\                    single-class cone dataset built from FSOCO
   autonomy\                        decision-making core: supervisor, planner, controller, safety (see autonomy\README.md)
-  lane_detection\                  tape-line lane detection (planned, empty)
+    paths.py                       shared REPO / MODELS / DATA locations
+  lane_detection\                  tape-line lane detection (see lane_detection\README.md)
   oak-examples\                    upstream Luxonis examples, for reference
   requirements.txt                 oak-env dependencies
   .env                             DEPTHAI_HUB_API_KEY (never commit)
 ```
+
+### Model and data folders
+
+Weights and runtime data live outside the repo and out of git. `autonomy\paths.py` resolves them the same way on every machine, so scripts work from any working directory:
+
+| Name | Environment variable | Default | Holds |
+|---|---|---|---|
+| `MODELS` | `AKS_MODELS` | `~/aks_models` | `.rvc2.tar.xz` archives the camera scripts load |
+| `DATA` | `AKS_DATA` | `~/aks_data` | `raw\` recorded frames, `obstacles.csv`, recordings, logs |
+
+On the laptop, keep labeling sessions in `data_collection\raw\` by pointing `AKS_DATA` there, and copy the model archive into `~/aks_models` (or point `AKS_MODELS` at `models\`):
+
+```powershell
+[Environment]::SetEnvironmentVariable("AKS_DATA", "C:\Users\Tyler\AKS_Root\data_collection", "User")
+New-Item -ItemType Directory -Force "$HOME\aks_models"
+Copy-Item models\aks_obj_detection.rvc2.tar.xz "$HOME\aks_models\"
+```
+
+Open a new terminal afterwards so the variable is picked up.
 
 ---
 
@@ -122,7 +141,7 @@ cd oak-template
 python main.py
 ```
 
-Open http://localhost:8082 in a browser. `MODEL_ARCHIVE` at the top of the file is an absolute path to the `.rvc2.tar.xz`, currently `models\aks_obj_detection.rvc2.tar.xz`.
+Open http://localhost:8082 in a browser. `MODEL_ARCHIVE` at the top of the file is `$AKS_MODELS\aks_obj_detection.rvc2.tar.xz`.
 
 The snaps lines (`SnapsProducer` / `SnapsUploader`) are commented out: with them enabled, the process crashed natively as soon as a person appeared in view. To use them later, put `DEPTHAI_HUB_API_KEY=...` in `.env` in the workspace root first.
 
@@ -131,8 +150,9 @@ The snaps lines (`SnapsProducer` / `SnapsUploader`) are commented out: with them
 Runs your model plus stereo depth on the camera and prints one line per detection:
 
 ```powershell
-python oak_obstacles.py              # headless: prints + writes obstacles.csv
+python oak_obstacles.py              # headless: prints + writes $AKS_DATA\obstacles.csv
 python oak_obstacles.py --show       # also opens a preview window (q to quit)
+python oak_obstacles.py --model other.rvc2.tar.xz --log run1.csv   # override either path
 ```
 
 Output: `class  conf  fwd=<m>  lat=<m>`, nearest first.
@@ -141,7 +161,7 @@ Settings are in the CONFIG block at the top of the file:
 
 | Setting | Meaning |
 |---|---|
-| `MODEL_ARCHIVE` | path to the `.rvc2.tar.xz` |
+| `MODEL_ARCHIVE` | default `.rvc2.tar.xz` in `$AKS_MODELS` (`--model` overrides) |
 | `NN_SHAVES` | compute cores for the network (7 works; try 6 if you get a shaves error) |
 | `CONF` | detection confidence threshold |
 | `DEPTH_MIN_MM` / `DEPTH_MAX_MM` | valid stereo depth range |
@@ -164,7 +184,7 @@ cd data_collection\scripts
 python record_frames.py --session 2026-10-20_lot_sunny --preview
 ```
 
-Frames save to `data_collection\raw\<session>\`. Options:
+Frames save to `$AKS_DATA\raw\<session>\`, which is `data_collection\raw\<session>\` when `AKS_DATA` is set as above. Options:
 
 | Flag | Meaning |
 |---|---|
@@ -254,7 +274,7 @@ This script starts from `OLD_WEIGHTS` (currently `runs\detect\cone_person_kart_f
 
 1. Upload `best.pt` to Luxonis HubAI and convert for RVC2.
 2. Input size is chosen at conversion, not in code. 640x640 ran at ~7 FPS in the viewer; 512x288 ran at ~17 FPS in the viewer (network only, before stereo depth was added).
-3. Download the `.rvc2.tar.xz`, rename it, and point `MODEL_ARCHIVE` at it. Class names come from the archive. Don't extract it.
+3. Download the `.rvc2.tar.xz`, rename it, and put it in `$AKS_MODELS` (or update `MODEL_ARCHIVE`). Class names come from the archive. Don't extract it.
 
 ---
 
@@ -266,7 +286,7 @@ This script starts from `OLD_WEIGHTS` (currently `runs\detect\cone_person_kart_f
 uv venv --python 3.10 autonomy\.venv
 uv pip install --python autonomy\.venv\Scripts\python.exe -r autonomy\requirements.txt
 autonomy\.venv\Scripts\python -m pytest autonomy\tests -q
-autonomy\.venv\Scripts\python -m autonomy.replay oak-template\obstacles.csv --show
+autonomy\.venv\Scripts\python -m autonomy.replay "$env:AKS_DATA\obstacles.csv" --show
 ```
 
 The replay command runs a recorded `obstacles.csv` through the whole stack in simulated time and saves a plot of steering, throttle/brake and state. Real camera, motor and RC adapters are still stubs. See `autonomy\README.md` for the design and the known gaps.

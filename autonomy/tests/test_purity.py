@@ -7,7 +7,7 @@ import pytest
 
 PKG = Path(__file__).resolve().parents[1]
 CORE = ["types.py", "config.py", "geometry.py", "supervisor.py", "planner.py",
-        "controller.py", "safety.py", "tracker.py", "loop.py"]
+        "controller.py", "safety.py", "tracker.py", "loop.py", "paths.py"]
 ALLOWED_THIRD_PARTY = {"numpy"}
 EXTRA_ALLOWED = {"config.py": {"yaml"}}   # config loading needs a YAML parser
 

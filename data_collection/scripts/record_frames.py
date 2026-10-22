@@ -1,9 +1,9 @@
 """
 record_frames.py -- save frames from the OAK-D every N seconds, for labeling in Label Studio.
 
-Put it in AKS_Root\\data_collection\\ (or its scripts\\ subfolder). Frames go to
-AKS_Root\\data_collection\\raw\\<session>\\<session>_00001.jpg, one folder per recording
-session (so you can split train/val by whole session later).
+Frames go to $AKS_DATA/raw/<session>/<session>_00001.jpg, one folder per recording session
+(so you can split train/val by whole session later). AKS_DATA defaults to ~/aks_data; on the
+laptop set it to AKS_Root/data_collection so sessions land in data_collection/raw/.
 
 Examples:
     python record_frames.py --session 2026-10-20_lot_sunny
@@ -15,6 +15,7 @@ Preview keys: s = save a frame now, p = pause/resume, q = quit.
 """
 import argparse
 import json
+import sys
 import time
 from datetime import datetime
 from pathlib import Path
@@ -23,9 +24,10 @@ import cv2
 import depthai as dai
 import numpy as np
 
-_HERE = Path(__file__).resolve().parent
-# works whether the script sits in data_collection\\ or data_collection\\scripts\\
-DEFAULT_OUT = (_HERE.parent if _HERE.name == "scripts" else _HERE) / "raw"
+sys.path.append(str(Path(__file__).resolve().parents[2]))   # repo root, for autonomy.paths
+from autonomy.paths import DATA  # noqa: E402
+
+DEFAULT_OUT = DATA / "raw"
 FPS = 15                      # camera rate; saving is throttled by --interval anyway
 
 
@@ -72,7 +74,7 @@ def main():
         "size": list(args.size),
         "min_sharp": args.min_sharp,
         "min_change": args.min_change,
-    }, indent=2))
+    }, indent=2), encoding="utf-8")
 
     saved = skipped_blur = skipped_dup = 0
     last_save = 0.0

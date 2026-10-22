@@ -7,20 +7,25 @@ obstacle list the controller can consume later. Distance source is swappable: wh
 lidar is fused in, only the code that fills forward_m/lateral_m changes.
 
 Run:
-    python oak_obstacles.py              # headless: prints + logs to obstacles.csv
+    python oak_obstacles.py              # headless: prints + logs to $AKS_DATA/obstacles.csv
     python oak_obstacles.py --show       # also opens an OpenCV window (q to quit)
 Stop headless runs with Ctrl+C.
 """
 import argparse
 import csv
+import sys
 import time
 from dataclasses import dataclass
+from pathlib import Path
 
 import cv2
 import depthai as dai
 
+sys.path.append(str(Path(__file__).resolve().parents[1]))   # repo root, for autonomy.paths
+from autonomy.paths import DATA, MODELS  # noqa: E402
+
 # ---------------- CONFIG ----------------
-MODEL_ARCHIVE = r"C:\Users\Tyler\AKS_Root\models\aks_obj_detection.rvc2.tar.xz"
+MODEL_ARCHIVE = MODELS / "aks_obj_detection.rvc2.tar.xz"   # override with --model
 FPS = 10                 # camera/depth rate; your model runs ~7 FPS at 640x640 anyway
 CONF = 0.5               # detection confidence threshold
 DEPTH_MIN_MM = 200       # ignore depth readings closer than this
@@ -111,10 +116,16 @@ def make_depth(p):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--show", action="store_true", help="open an OpenCV window")
-    ap.add_argument("--log", default="obstacles.csv", help="CSV log path")
+    ap.add_argument("--log", type=Path, default=DATA / "obstacles.csv", help="CSV log path")
+    ap.add_argument("--model", type=Path, default=MODEL_ARCHIVE, help=".rvc2.tar.xz archive (not extracted)")
     args = ap.parse_args()
 
-    nn_archive = dai.NNArchive(MODEL_ARCHIVE)
+    if not args.model.is_file():
+        raise SystemExit(f"Model archive not found: {args.model}\n"
+                         "Copy it into $AKS_MODELS (default ~/aks_models) or pass --model.")
+    nn_archive = dai.NNArchive(str(args.model))
+    args.log.parent.mkdir(parents=True, exist_ok=True)
+    print(f"Logging to {args.log}")
 
     with dai.Pipeline() as p, open(args.log, "w", newline="") as f:
         writer = csv.writer(f)

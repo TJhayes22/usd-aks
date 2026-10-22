@@ -10,9 +10,11 @@ from pathlib import Path
 
 import supervisely as sly
 
+REPO = Path(__file__).resolve().parents[1]
+
 # --- edit these two paths if yours differ -----------------------------------
-SRC = Path(r"C:\Users\Tyler\AKS_Root\fsoco_bounding_boxes_train")
-DST = Path(r"C:\Users\Tyler\AKS_Root\fsoco_yolo")
+SRC = REPO / "fsoco_bounding_boxes_train"
+DST = REPO / "fsoco_yolo"
 # -----------------------------------------------------------------------------
 
 

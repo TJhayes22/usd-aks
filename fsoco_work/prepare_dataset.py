@@ -19,9 +19,11 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw
 
+REPO = Path(__file__).resolve().parents[1]
+
 # --- edit these ---------------------------------------------------------------
-SRC = Path(r"C:\Users\Tyler\AKS_Root\fsoco_yolo")        # converter output
-OUT = Path(r"C:\Users\Tyler\AKS_Root\cone_dataset")      # new dataset folder
+SRC = REPO / "fsoco_yolo"          # converter output
+OUT = REPO / "cone_dataset"        # new dataset folder
 MAX_IMAGES = 3000          # None = use everything
 RESIZE_LONG_SIDE = 640     # None = keep original size
 VAL_FRACTION = 0.15

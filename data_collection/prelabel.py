@@ -22,18 +22,19 @@ from pathlib import Path
 from ultralytics import YOLO
 
 IMG_EXT = {".jpg", ".jpeg", ".png", ".bmp", ".webp"}
+HERE = Path(__file__).resolve().parent   # defaults resolve here, not in the launch folder
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--images", required=True)
-    ap.add_argument("--model", default="yolov8s-worldv2.pt")
+    ap.add_argument("--model", default=str(HERE / "yolov8s-worldv2.pt"))
     ap.add_argument("--prompts", nargs="+", default=["rc car", "toy car", "remote control car"])
     ap.add_argument("--keep-classes", nargs="*", default=None)
     ap.add_argument("--label", default="rc_car")
     ap.add_argument("--conf", type=float, default=0.15)
     ap.add_argument("--doc-root", default=".")
-    ap.add_argument("--out", default="tasks.json")
+    ap.add_argument("--out", default=str(HERE / "tasks.json"))
     args = ap.parse_args()
 
     model = YOLO(args.model)

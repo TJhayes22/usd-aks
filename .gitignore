@@ -28,8 +28,22 @@ data_collection/ls_export/
 data_collection/weights/
 autonomy_replay*.png
 
-# model weights (the deployable .rvc2.tar.xz archives are still committed)
+# model weights and runtime data live outside the repo ($AKS_MODELS, $AKS_DATA)
+aks_models/
+aks_data/
 *.pt
+*.rvc2.tar.xz
+
+# recordings, logs, debug output (also when AKS_DATA points inside the repo)
+recordings/
+logs/
+*.mp4
+*.avi
+*.log
+selftest_*.png
+
+# per-camera lane calibration output
+lane_detection/intrinsics.json
 
 # upstream Luxonis examples, kept locally for reference only
 oak-examples/
