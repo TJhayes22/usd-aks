@@ -1,0 +1,22 @@
+identifier = "custom.oakapp"
+app_version = "1.0.0"
+
+prepare_container = [
+    { type = "RUN", command = "apt-get update" },
+    { type = "RUN", command = "apt-get install -y python3 python3-pip wget git" },
+]
+
+prepare_build_container = []
+
+build_steps = ["pip3 install -r /app/requirements.txt --break-system-packages"]
+
+entrypoint = ["bash", "-c", "python3 /app/main.py"]
+
+[base_image]
+api_url = "https://registry-1.docker.io"
+service = "registry.docker.io"
+oauth_url = "https://auth.docker.io/token"
+auth_type = "repository"
+auth_name = "luxonis/oakapp-base"
+image_name = "luxonis/oakapp-base"
+image_tag = "1.2.6"

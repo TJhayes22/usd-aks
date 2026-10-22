@@ -1,0 +1,56 @@
+# Tunables for the autonomy stack. Units are in the key names.
+# Defaults are for the 1/10-scale car; braking and latency are estimates until measured.
+
+vehicle:
+  wheelbase_m: 0.26
+  track_width_m: 0.22            # car's own track width
+  vehicle_width_m: 0.20
+  camera_to_rear_axle_m: 0.20    # camera is this far ahead of the rear axle (pure pursuit pivots on the axle)
+  max_steer_rad: 0.45
+  max_speed_mps: 3.0
+  accel_max_mps2: 2.0            # full throttle acceleration (used by the mock vehicle)
+  brake_decel_mps2: 3.0          # full brake deceleration (progress report: 3-4 m/s^2, unmeasured)
+  latency_s: 0.19                # sense -> actuate delay (progress report estimate)
+
+loop:
+  hz: 20
+
+timeouts:
+  rc_timeout_s: 0.5              # no RC packet for this long = link lost
+  perception_timeout_s: 0.5      # no perception frame for this long = stale
+  fault_escalate_s: 0.2          # FAULT held this long -> URGENT_STOP
+
+planner:
+  cone_track_width_m: 1.0        # course width between cone lines; one-sided paths offset by half of it
+  one_side_confidence: 0.5
+  full_confidence_pairs: 2       # cone pairs needed for confidence 1.0
+  prefer: lane                   # lane or cones, when both are available
+
+supervisor:
+  min_path_confidence: 0.3       # below this -> SLOW
+  slow_factor: 2.0               # obstacle within slow_factor x stop distance -> SLOW
+
+obstacles:
+  corridor_margin_m: 0.15        # corridor half-width = vehicle_width/2 + this
+  corridor_length_m: 10.0        # how far ahead obstacles are considered
+  stop_margin_m:                 # extra standoff added to the stopping distance, per class
+    person: 2.0
+    kart: 0.3
+    default: 0.5
+  follow_distance_m: 1.5         # gap kept to a kart ahead
+  k_follow_per_s: 1.0            # speed limit = k_follow * (gap - follow_distance)
+
+control:
+  cruise_speed_mps: 2.0
+  slow_speed_mps: 0.8
+  ld_min_m: 0.6                  # pure pursuit lookahead = clip(k_ld*v + ld_min, ld_min, ld_max)
+  ld_max_m: 2.0
+  k_ld_s: 0.4
+  kp_speed: 0.3                  # throttle per m/s of speed error
+  speed_tolerance_mps: 0.3       # brake when faster than target by more than this
+  max_throttle: 1.0
+
+replay:
+  csv_lateral_sign: 1            # x = sign * lateral_m from obstacles.csv
+  # obstacles.csv has no rows for empty frames, so a gap longer than
+  # timeouts.perception_timeout_s replays as stale perception (FAULT).

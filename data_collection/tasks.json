@@ -1,0 +1,7227 @@
+[
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00001.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8655979037284851,
+      "value": {
+       "x": 49.389801025390625,
+       "y": 67.14320712619357,
+       "width": 23.182382583618164,
+       "height": 25.262264675564236,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00003.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9203553199768066,
+      "value": {
+       "x": 40.97080707550049,
+       "y": 59.223361545138886,
+       "width": 24.08076286315918,
+       "height": 22.376386854383682,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.731248140335083,
+      "value": {
+       "x": 40.89728355407715,
+       "y": 59.172939724392364,
+       "width": 24.075927734375,
+       "height": 22.373267279730904,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00004.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8896047472953796,
+      "value": {
+       "x": 34.967145919799805,
+       "y": 55.50992329915365,
+       "width": 25.053091049194336,
+       "height": 21.339535183376736,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.46267053484916687,
+      "value": {
+       "x": 34.84623670578003,
+       "y": 55.93477884928385,
+       "width": 25.11413812637329,
+       "height": 20.853474934895832,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00005.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8146601915359497,
+      "value": {
+       "x": 36.61759614944458,
+       "y": 59.33330535888672,
+       "width": 25.59436559677124,
+       "height": 21.573592291937935,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.19798435270786285,
+      "value": {
+       "x": 36.39001131057739,
+       "y": 58.77753363715278,
+       "width": 25.728318691253662,
+       "height": 22.065819634331596,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00006.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8584184050559998,
+      "value": {
+       "x": 34.69432353973389,
+       "y": 59.808451334635414,
+       "width": 25.251035690307617,
+       "height": 20.82268608940972,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00007.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8162631988525391,
+      "value": {
+       "x": 35.003414154052734,
+       "y": 60.114661322699654,
+       "width": 25.33153533935547,
+       "height": 21.358642578125,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.15298709273338318,
+      "value": {
+       "x": 34.97722148895264,
+       "y": 60.09002685546875,
+       "width": 25.380325317382812,
+       "height": 21.310000949435764,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00008.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7782776355743408,
+      "value": {
+       "x": 34.820308685302734,
+       "y": 60.0744374593099,
+       "width": 25.26773452758789,
+       "height": 21.362321641710068,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.16314490139484406,
+      "value": {
+       "x": 34.66181755065918,
+       "y": 60.07213592529297,
+       "width": 25.39229393005371,
+       "height": 21.32378896077474,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00009.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.5461817383766174,
+      "value": {
+       "x": 33.76375436782837,
+       "y": 61.93027920193143,
+       "width": 25.42875051498413,
+       "height": 21.097496880425346,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00010.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7359327077865601,
+      "value": {
+       "x": 33.29577445983887,
+       "y": 63.78492143419054,
+       "width": 25.61997413635254,
+       "height": 20.985823737250435,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00011.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.6903870701789856,
+      "value": {
+       "x": 32.81355142593384,
+       "y": 63.73106214735243,
+       "width": 25.800530910491943,
+       "height": 22.567867702907986,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00012.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.4944295883178711,
+      "value": {
+       "x": 40.18115997314453,
+       "y": 61.72030131022135,
+       "width": 24.548969268798828,
+       "height": 22.500220404730904,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00013.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8911731243133545,
+      "value": {
+       "x": 32.938432693481445,
+       "y": 55.01491122775607,
+       "width": 22.090511322021484,
+       "height": 23.44557868109809,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00014.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9281172752380371,
+      "value": {
+       "x": 29.30833101272583,
+       "y": 49.27659776475694,
+       "width": 22.203290462493896,
+       "height": 25.801781548394096,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8568549156188965,
+      "value": {
+       "x": 29.317262172698975,
+       "y": 49.17180379231771,
+       "width": 22.03186273574829,
+       "height": 26.06469048394097,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00015.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9667351245880127,
+      "value": {
+       "x": 29.922637939453125,
+       "y": 47.114902072482636,
+       "width": 22.710895538330078,
+       "height": 26.300472683376736,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9270932078361511,
+      "value": {
+       "x": 29.84452724456787,
+       "y": 47.223120795355904,
+       "width": 22.772140502929688,
+       "height": 26.41021728515625,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00016.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9371928572654724,
+      "value": {
+       "x": 37.851619720458984,
+       "y": 48.61779106987847,
+       "width": 22.51262664794922,
+       "height": 27.723778618706596,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00017.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8019487261772156,
+      "value": {
+       "x": 41.65548324584961,
+       "y": 50.8075205485026,
+       "width": 22.335529327392578,
+       "height": 27.393603854709202,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00018.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7093440890312195,
+      "value": {
+       "x": 42.8151798248291,
+       "y": 54.00159200032552,
+       "width": 22.036008834838867,
+       "height": 26.955091688368057,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00019.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7119125127792358,
+      "value": {
+       "x": 45.222978591918945,
+       "y": 55.340614318847656,
+       "width": 23.726024627685547,
+       "height": 28.026118808322483,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.5647894144058228,
+      "value": {
+       "x": 45.25759696960449,
+       "y": 55.49536387125651,
+       "width": 23.659162521362305,
+       "height": 27.891985575358074,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00020.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.6713798642158508,
+      "value": {
+       "x": 43.759965896606445,
+       "y": 60.585717095269096,
+       "width": 26.273298263549805,
+       "height": 28.459455702039932,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00021.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.44674620032310486,
+      "value": {
+       "x": 44.022908210754395,
+       "y": 63.732825385199654,
+       "width": 27.061729431152344,
+       "height": 28.611229790581596,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.39306601881980896,
+      "value": {
+       "x": 44.0467643737793,
+       "y": 63.78801133897569,
+       "width": 27.11958885192871,
+       "height": 28.384840223524307,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00022.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.5730669498443604,
+      "value": {
+       "x": 45.888047218322754,
+       "y": 68.30035739474826,
+       "width": 27.226667404174805,
+       "height": 29.253217909071182,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00023.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.4609091877937317,
+      "value": {
+       "x": 45.82095146179199,
+       "y": 76.41825358072917,
+       "width": 24.003162384033203,
+       "height": 23.581746419270832,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.20562142133712769,
+      "value": {
+       "x": 45.29478073120117,
+       "y": 76.60915798611111,
+       "width": 24.501428604125977,
+       "height": 23.39084201388889,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00024.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00025.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7854716181755066,
+      "value": {
+       "x": 49.98739719390869,
+       "y": 75.41435241699219,
+       "width": 21.793193817138672,
+       "height": 24.585647583007812,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.32027149200439453,
+      "value": {
+       "x": 50.027618408203125,
+       "y": 75.56396484375,
+       "width": 21.763248443603516,
+       "height": 24.43603515625,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00026.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.38136085867881775,
+      "value": {
+       "x": 52.16789245605469,
+       "y": 77.36189100477431,
+       "width": 21.86534881591797,
+       "height": 22.638108995225693,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.21876977384090424,
+      "value": {
+       "x": 52.20950126647949,
+       "y": 77.33150906032986,
+       "width": 21.728439331054688,
+       "height": 22.66849093967014,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00027.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.622592031955719,
+      "value": {
+       "x": 49.95805740356445,
+       "y": 76.00221421983507,
+       "width": 21.96080207824707,
+       "height": 23.997785780164932,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.5467579960823059,
+      "value": {
+       "x": 49.9080753326416,
+       "y": 75.85588243272569,
+       "width": 22.038145065307617,
+       "height": 24.144117567274307,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00028.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7717061042785645,
+      "value": {
+       "x": 46.00250244140625,
+       "y": 72.06966824001736,
+       "width": 23.660564422607422,
+       "height": 27.929823133680557,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00029.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.2785142660140991,
+      "value": {
+       "x": 30.740280151367188,
+       "y": 61.60785251193576,
+       "width": 31.94284439086914,
+       "height": 38.33930121527778,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.2567683756351471,
+      "value": {
+       "x": 30.74662446975708,
+       "y": 61.707560221354164,
+       "width": 31.92809820175171,
+       "height": 38.240254720052086,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00030.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.63121497631073,
+      "value": {
+       "x": 31.383037567138672,
+       "y": 55.93428717719184,
+       "width": 40.37972450256348,
+       "height": 44.03203328450521,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00031.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.6188094615936279,
+      "value": {
+       "x": 24.430112838745117,
+       "y": 55.893851386176216,
+       "width": 42.95848846435547,
+       "height": 38.04229736328125,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.614620566368103,
+      "value": {
+       "x": 24.251344203948975,
+       "y": 55.860375298394096,
+       "width": 43.143885135650635,
+       "height": 38.27965630425347,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00032.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.1794811189174652,
+      "value": {
+       "x": 29.80630874633789,
+       "y": 73.58781602647569,
+       "width": 16.182756423950195,
+       "height": 23.98464626736111,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00033.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.3234685957431793,
+      "value": {
+       "x": 7.20637321472168,
+       "y": 69.869384765625,
+       "width": 31.293768882751465,
+       "height": 30.130615234375,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00034.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00035.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00036.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.6499254107475281,
+      "value": {
+       "x": 43.72856140136719,
+       "y": 56.639908684624565,
+       "width": 21.723594665527344,
+       "height": 33.55072445339627,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00037.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7661834955215454,
+      "value": {
+       "x": 45.63830375671387,
+       "y": 50.94261169433594,
+       "width": 22.09096908569336,
+       "height": 31.29015604654948,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00038.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7398706674575806,
+      "value": {
+       "x": 48.48000526428223,
+       "y": 50.80026414659288,
+       "width": 23.122596740722656,
+       "height": 32.19618903266059,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00039.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.6557772159576416,
+      "value": {
+       "x": 46.31399154663086,
+       "y": 49.12146674262153,
+       "width": 23.415746688842773,
+       "height": 32.470999823676216,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.2265925407409668,
+      "value": {
+       "x": 46.29008769989014,
+       "y": 49.09858703613281,
+       "width": 23.4102725982666,
+       "height": 32.450247870551216,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00040.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.5445379614830017,
+      "value": {
+       "x": 44.91429328918457,
+       "y": 48.342251247829864,
+       "width": 23.552265167236328,
+       "height": 31.970596313476562,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00041.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8310852646827698,
+      "value": {
+       "x": 43.30461502075195,
+       "y": 48.96039326985677,
+       "width": 23.394336700439453,
+       "height": 29.66488308376736,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.49063003063201904,
+      "value": {
+       "x": 43.39015007019043,
+       "y": 48.689024183485245,
+       "width": 23.20964813232422,
+       "height": 29.899766710069443,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00042.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7483389973640442,
+      "value": {
+       "x": 43.62612724304199,
+       "y": 51.32991366916232,
+       "width": 22.655296325683594,
+       "height": 31.222364637586807,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.6495823264122009,
+      "value": {
+       "x": 43.558855056762695,
+       "y": 53.15467834472656,
+       "width": 22.745380401611328,
+       "height": 29.300181070963543,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00043.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7228150367736816,
+      "value": {
+       "x": 44.209651947021484,
+       "y": 55.10820176866319,
+       "width": 22.14728355407715,
+       "height": 29.429524739583332,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.6283637285232544,
+      "value": {
+       "x": 44.173545837402344,
+       "y": 55.296058654785156,
+       "width": 22.14111328125,
+       "height": 29.12149641248915,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00044.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8966152667999268,
+      "value": {
+       "x": 44.72188472747803,
+       "y": 60.432213677300346,
+       "width": 20.398645401000977,
+       "height": 29.108022054036457,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8156106472015381,
+      "value": {
+       "x": 44.686594009399414,
+       "y": 60.39726257324219,
+       "width": 20.476245880126953,
+       "height": 29.159359402126736,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00045.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8897591233253479,
+      "value": {
+       "x": 45.7243537902832,
+       "y": 63.38678995768229,
+       "width": 18.636531829833984,
+       "height": 28.456437852647568,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8341476917266846,
+      "value": {
+       "x": 45.8296012878418,
+       "y": 63.41718885633681,
+       "width": 18.5406494140625,
+       "height": 28.206668429904514,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00046.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8825225234031677,
+      "value": {
+       "x": 48.745107650756836,
+       "y": 60.532892015245224,
+       "width": 19.621639251708984,
+       "height": 29.640464782714844,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00047.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.5768746733665466,
+      "value": {
+       "x": 41.47221565246582,
+       "y": 56.759346856011284,
+       "width": 20.914764404296875,
+       "height": 26.97933620876736,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00048.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7048843502998352,
+      "value": {
+       "x": 41.829233169555664,
+       "y": 52.427071465386284,
+       "width": 21.06517791748047,
+       "height": 28.75473870171441,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.3670766055583954,
+      "value": {
+       "x": 41.80138111114502,
+       "y": 52.35327826605903,
+       "width": 21.047182083129883,
+       "height": 28.614501953125,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00049.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9125467538833618,
+      "value": {
+       "x": 41.91485404968262,
+       "y": 48.72209337022569,
+       "width": 21.282939910888672,
+       "height": 29.27581787109375,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.26922914385795593,
+      "value": {
+       "x": 42.1025276184082,
+       "y": 48.65949842664931,
+       "width": 21.079673767089844,
+       "height": 29.612104627821182,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00050.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8487700819969177,
+      "value": {
+       "x": 41.70445442199707,
+       "y": 46.68656243218316,
+       "width": 21.513471603393555,
+       "height": 32.680155436197914,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00051.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7612120509147644,
+      "value": {
+       "x": 40.86393356323242,
+       "y": 50.802010430230034,
+       "width": 23.425006866455078,
+       "height": 33.3966318766276,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00052.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7622068524360657,
+      "value": {
+       "x": 41.567654609680176,
+       "y": 52.965384589301216,
+       "width": 24.689102172851562,
+       "height": 33.435821533203125,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00053.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.77048259973526,
+      "value": {
+       "x": 42.02821731567383,
+       "y": 53.308631049262154,
+       "width": 25.276126861572266,
+       "height": 33.543548583984375,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00054.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.6998595595359802,
+      "value": {
+       "x": 41.679420471191406,
+       "y": 53.2828860812717,
+       "width": 25.665054321289062,
+       "height": 33.43595716688368,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00055.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.6690847277641296,
+      "value": {
+       "x": 41.20570182800293,
+       "y": 54.470884535047745,
+       "width": 25.577468872070312,
+       "height": 33.84594387478299,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00056.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7977243065834045,
+      "value": {
+       "x": 33.585052490234375,
+       "y": 54.994540744357636,
+       "width": 22.973690032958984,
+       "height": 36.69872707790799,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00057.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9362954497337341,
+      "value": {
+       "x": 30.38228750228882,
+       "y": 54.3367428249783,
+       "width": 20.299322605133057,
+       "height": 39.640282524956596,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00058.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00059.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00060.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00061.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00062.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.19996628165245056,
+      "value": {
+       "x": 45.05671501159668,
+       "y": 67.61511908637152,
+       "width": 24.480953216552734,
+       "height": 32.38488091362847,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00063.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8766241073608398,
+      "value": {
+       "x": 40.48736572265625,
+       "y": 68.46906873914931,
+       "width": 21.94451332092285,
+       "height": 31.530931260850693,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7239969968795776,
+      "value": {
+       "x": 40.525922775268555,
+       "y": 68.52734035915799,
+       "width": 21.921367645263672,
+       "height": 31.472659640842014,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00064.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.6208894848823547,
+      "value": {
+       "x": 34.49919939041138,
+       "y": 79.86843532986111,
+       "width": 21.729180812835693,
+       "height": 20.13156467013889,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.37567469477653503,
+      "value": {
+       "x": 34.5426607131958,
+       "y": 79.69353569878473,
+       "width": 21.682186126708984,
+       "height": 20.30646430121528,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00065.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00066.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1510_00067.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00001.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.6249158382415771,
+      "value": {
+       "x": 32.054762840270996,
+       "y": 45.801493326822914,
+       "width": 24.994287490844727,
+       "height": 35.98921034071181,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00002.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.2756173610687256,
+      "value": {
+       "x": 32.442500591278076,
+       "y": 47.33787536621094,
+       "width": 24.65385675430298,
+       "height": 34.50389438205295,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00003.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.6208400726318359,
+      "value": {
+       "x": 32.57498741149902,
+       "y": 47.00145297580295,
+       "width": 24.45265769958496,
+       "height": 35.02777099609375,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00004.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.4730835556983948,
+      "value": {
+       "x": 32.13462829589844,
+       "y": 45.813513861762154,
+       "width": 24.45148468017578,
+       "height": 34.854770236545136,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00005.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.4693038761615753,
+      "value": {
+       "x": 32.49128580093384,
+       "y": 46.44111633300781,
+       "width": 24.6201491355896,
+       "height": 35.27489556206597,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00006.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.5905144810676575,
+      "value": {
+       "x": 33.08901071548462,
+       "y": 47.270516289605034,
+       "width": 24.69602346420288,
+       "height": 34.769558376736114,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00007.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7193984389305115,
+      "value": {
+       "x": 34.59226846694946,
+       "y": 47.4446529812283,
+       "width": 24.857823848724365,
+       "height": 34.62991502549913,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00008.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7035154700279236,
+      "value": {
+       "x": 35.03714323043823,
+       "y": 47.23100450303819,
+       "width": 24.85819101333618,
+       "height": 34.770711263020836,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00009.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.758106529712677,
+      "value": {
+       "x": 31.33979320526123,
+       "y": 43.933919270833336,
+       "width": 24.998531341552734,
+       "height": 38.61548529730903,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00010.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.5652115941047668,
+      "value": {
+       "x": 32.719361782073975,
+       "y": 42.27250840928819,
+       "width": 27.664568424224854,
+       "height": 39.957665337456596,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00011.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.5903239846229553,
+      "value": {
+       "x": 29.174649715423584,
+       "y": 45.521884494357636,
+       "width": 29.294397830963135,
+       "height": 41.75409952799479,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00012.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.18672901391983032,
+      "value": {
+       "x": 27.638676166534424,
+       "y": 49.280882941352,
+       "width": 29.917428493499756,
+       "height": 41.53032514784071,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00013.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.1677624136209488,
+      "value": {
+       "x": 27.918899059295654,
+       "y": 49.42237854003906,
+       "width": 29.828932285308838,
+       "height": 41.93662855360243,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00014.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00015.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00016.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00017.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.163190096616745,
+      "value": {
+       "x": 27.26893901824951,
+       "y": 49.61451212565104,
+       "width": 29.46894645690918,
+       "height": 41.52520073784722,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00018.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.3614952862262726,
+      "value": {
+       "x": 27.180230617523193,
+       "y": 49.05146704779731,
+       "width": 29.69780206680298,
+       "height": 41.76689571804471,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00019.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.4205546975135803,
+      "value": {
+       "x": 27.349977493286133,
+       "y": 48.13462999131944,
+       "width": 29.430007934570312,
+       "height": 41.78276909722222,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00020.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.4342864751815796,
+      "value": {
+       "x": 27.548580169677734,
+       "y": 48.38639153374566,
+       "width": 29.47911262512207,
+       "height": 41.84471978081597,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00021.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.27476897835731506,
+      "value": {
+       "x": 29.198365211486816,
+       "y": 45.64649793836806,
+       "width": 28.74420166015625,
+       "height": 43.24976603190104,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00022.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.5921054482460022,
+      "value": {
+       "x": 43.82920265197754,
+       "y": 41.10031975640191,
+       "width": 26.342754364013672,
+       "height": 42.03129238552518,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00023.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.540507972240448,
+      "value": {
+       "x": 39.3658447265625,
+       "y": 40.96076965332031,
+       "width": 26.97464942932129,
+       "height": 37.34213087293837,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00024.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.38243648409843445,
+      "value": {
+       "x": 37.358670234680176,
+       "y": 37.63949076334635,
+       "width": 29.6199893951416,
+       "height": 39.071926540798614,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00025.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.3627645969390869,
+      "value": {
+       "x": 34.52463388442993,
+       "y": 44.169413248697914,
+       "width": 32.25698232650757,
+       "height": 38.70790269639757,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00026.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.5303136706352234,
+      "value": {
+       "x": 33.730387687683105,
+       "y": 42.602945963541664,
+       "width": 36.232500076293945,
+       "height": 42.61186387803819,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00027.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.4915221631526947,
+      "value": {
+       "x": 31.095294952392578,
+       "y": 41.48897806803385,
+       "width": 36.416282653808594,
+       "height": 41.84950086805556,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00028.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.5757063627243042,
+      "value": {
+       "x": 31.21108055114746,
+       "y": 40.802086724175346,
+       "width": 36.715993881225586,
+       "height": 41.98396470811632,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00029.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.5520164370536804,
+      "value": {
+       "x": 31.10574722290039,
+       "y": 39.00462680392795,
+       "width": 37.49937057495117,
+       "height": 42.58528815375434,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00030.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.344054639339447,
+      "value": {
+       "x": 28.18267822265625,
+       "y": 41.03205362955729,
+       "width": 34.49531555175781,
+       "height": 41.153293185763886,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00031.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7818541526794434,
+      "value": {
+       "x": 36.12110614776611,
+       "y": 38.90712314181857,
+       "width": 29.90711212158203,
+       "height": 41.18258158365885,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00032.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.6566576361656189,
+      "value": {
+       "x": 35.946950912475586,
+       "y": 28.919974433051216,
+       "width": 31.450471878051758,
+       "height": 46.287172105577255,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00033.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8240919709205627,
+      "value": {
+       "x": 28.296456336975098,
+       "y": 24.29184807671441,
+       "width": 37.7790641784668,
+       "height": 46.35814242892795,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00034.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9044306874275208,
+      "value": {
+       "x": 30.30959129333496,
+       "y": 24.99397701687283,
+       "width": 36.406660079956055,
+       "height": 41.949361165364586,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00035.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.900277853012085,
+      "value": {
+       "x": 29.067604541778564,
+       "y": 33.753043280707466,
+       "width": 34.47110891342163,
+       "height": 39.411044650607636,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00036.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.934937596321106,
+      "value": {
+       "x": 26.90455436706543,
+       "y": 35.32646179199219,
+       "width": 34.85635757446289,
+       "height": 39.39312405056424,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00037.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8820136785507202,
+      "value": {
+       "x": 30.21470069885254,
+       "y": 30.71155336168077,
+       "width": 33.270530700683594,
+       "height": 37.87475374009874,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00038.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.897434651851654,
+      "value": {
+       "x": 39.45241451263428,
+       "y": 30.40588590833876,
+       "width": 32.32980728149414,
+       "height": 35.7533073425293,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00039.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8205550909042358,
+      "value": {
+       "x": 37.65169143676758,
+       "y": 27.07628885904948,
+       "width": 36.215810775756836,
+       "height": 41.250618828667534,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00040.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9003646373748779,
+      "value": {
+       "x": 38.18228721618652,
+       "y": 23.37578667534722,
+       "width": 48.29699516296387,
+       "height": 43.78136528862847,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00041.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8935670256614685,
+      "value": {
+       "x": 39.084272384643555,
+       "y": 19.902021620008682,
+       "width": 50.25326728820801,
+       "height": 45.68197462293837,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00042.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.3865087926387787,
+      "value": {
+       "x": 39.83925819396973,
+       "y": 27.303848266601562,
+       "width": 44.51597213745117,
+       "height": 43.08770073784722,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.3216511905193329,
+      "value": {
+       "x": 35.246546268463135,
+       "y": 20.283756256103516,
+       "width": 59.11784887313843,
+       "height": 50.10168923272027,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00043.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00044.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.4437129497528076,
+      "value": {
+       "x": 3.131694793701172,
+       "y": 14.686838785807291,
+       "width": 94.83049392700195,
+       "height": 84.90407307942708,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00045.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.27650192379951477,
+      "value": {
+       "x": 26.074018478393555,
+       "y": 20.71515401204427,
+       "width": 47.81913757324219,
+       "height": 48.79559834798177,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.15388767421245575,
+      "value": {
+       "x": 6.814842224121094,
+       "y": 20.082196129692925,
+       "width": 70.62114715576172,
+       "height": 50.6393920050727,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00046.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8104608654975891,
+      "value": {
+       "x": 29.75341796875,
+       "y": 22.732628716362846,
+       "width": 54.92664337158203,
+       "height": 52.142435709635414,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00047.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7447258234024048,
+      "value": {
+       "x": 30.45315980911255,
+       "y": 7.9280895657009545,
+       "width": 55.65995931625366,
+       "height": 51.6729736328125,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00048.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7074546217918396,
+      "value": {
+       "x": 31.48484468460083,
+       "y": 11.742485894097221,
+       "width": 46.86605215072632,
+       "height": 52.4426523844401,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00049.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7098720669746399,
+      "value": {
+       "x": 24.667577743530273,
+       "y": 12.018856472439236,
+       "width": 40.97464561462402,
+       "height": 57.609592013888886,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00050.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8800852298736572,
+      "value": {
+       "x": 26.8808650970459,
+       "y": 30.708669026692707,
+       "width": 34.483652114868164,
+       "height": 43.69489881727431,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00051.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8932957649230957,
+      "value": {
+       "x": 31.461381912231445,
+       "y": 35.1489003499349,
+       "width": 31.660966873168945,
+       "height": 41.01855807834201,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00052.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8270536065101624,
+      "value": {
+       "x": 31.77778959274292,
+       "y": 36.201816134982636,
+       "width": 28.559534549713135,
+       "height": 38.14042833116319,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00053.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8183726668357849,
+      "value": {
+       "x": 29.754133224487305,
+       "y": 36.68361239963107,
+       "width": 29.4901180267334,
+       "height": 38.96842956542969,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00054.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.832725465297699,
+      "value": {
+       "x": 29.825310707092285,
+       "y": 36.24788072374132,
+       "width": 29.525842666625977,
+       "height": 40.41956583658854,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00055.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8512567281723022,
+      "value": {
+       "x": 31.792612075805664,
+       "y": 39.558351304796005,
+       "width": 29.089488983154297,
+       "height": 38.96430969238281,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00056.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8751265406608582,
+      "value": {
+       "x": 36.01604223251343,
+       "y": 38.39611477322049,
+       "width": 28.952791690826416,
+       "height": 38.73930189344618,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00057.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8585310578346252,
+      "value": {
+       "x": 37.71290302276611,
+       "y": 35.541788736979164,
+       "width": 28.85331153869629,
+       "height": 41.4331309000651,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00058.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.6921896934509277,
+      "value": {
+       "x": 25.78331470489502,
+       "y": 33.367250230577255,
+       "width": 27.799854278564453,
+       "height": 40.10729471842448,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00059.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8182383179664612,
+      "value": {
+       "x": 31.433961391448975,
+       "y": 35.240749782986114,
+       "width": 26.571314334869385,
+       "height": 35.31193203396268,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00060.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.837033748626709,
+      "value": {
+       "x": 40.77969551086426,
+       "y": 28.777008056640625,
+       "width": 29.424734115600586,
+       "height": 36.37763977050781,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00061.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9466646909713745,
+      "value": {
+       "x": 31.772127151489258,
+       "y": 30.80277336968316,
+       "width": 27.202701568603516,
+       "height": 29.344635009765625,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8677442669868469,
+      "value": {
+       "x": 31.64450168609619,
+       "y": 30.516467624240452,
+       "width": 27.391691207885742,
+       "height": 29.479810926649307,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00062.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9681580066680908,
+      "value": {
+       "x": 35.90331315994263,
+       "y": 40.73258293999566,
+       "width": 25.290696620941162,
+       "height": 26.088239881727432,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9646264910697937,
+      "value": {
+       "x": 36.033501625061035,
+       "y": 40.747367011176216,
+       "width": 25.20946502685547,
+       "height": 26.09775119357639,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00063.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9784054756164551,
+      "value": {
+       "x": 34.84750509262085,
+       "y": 40.76991611056857,
+       "width": 24.984419345855713,
+       "height": 24.458499484592014,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.6279070973396301,
+      "value": {
+       "x": 34.77458953857422,
+       "y": 40.81986321343316,
+       "width": 25.00605583190918,
+       "height": 24.528316921657986,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00064.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.938264787197113,
+      "value": {
+       "x": 35.631561279296875,
+       "y": 38.32620408799913,
+       "width": 25.094566345214844,
+       "height": 24.536336263020832,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.6998715400695801,
+      "value": {
+       "x": 35.475239753723145,
+       "y": 38.44137403700087,
+       "width": 25.043134689331055,
+       "height": 24.332054985894096,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00065.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9517508149147034,
+      "value": {
+       "x": 35.33414125442505,
+       "y": 36.649178398980034,
+       "width": 25.285661220550537,
+       "height": 24.681294759114582,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.815672755241394,
+      "value": {
+       "x": 35.4117488861084,
+       "y": 36.67707655164931,
+       "width": 25.168333053588867,
+       "height": 24.465721978081596,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1520_00066.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9483932256698608,
+      "value": {
+       "x": 36.502676010131836,
+       "y": 33.36217244466146,
+       "width": 26.6135311126709,
+       "height": 25.77559577094184,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8299249410629272,
+      "value": {
+       "x": 36.48918390274048,
+       "y": 33.31215328640408,
+       "width": 26.713712215423584,
+       "height": 25.939712524414062,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00001.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.3335492014884949,
+      "value": {
+       "x": 41.74324989318848,
+       "y": 78.5570780436198,
+       "width": 12.649106979370117,
+       "height": 15.574273003472221,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00002.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00003.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.20071017742156982,
+      "value": {
+       "x": 41.07255458831787,
+       "y": 77.40514119466145,
+       "width": 12.387876510620117,
+       "height": 14.66861300998264,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00004.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.6293671131134033,
+      "value": {
+       "x": 39.15518283843994,
+       "y": 70.94816419813368,
+       "width": 12.35036849975586,
+       "height": 14.31606716579861,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.4734199643135071,
+      "value": {
+       "x": 39.10527229309082,
+       "y": 70.82425435384114,
+       "width": 12.407655715942383,
+       "height": 14.775797526041666,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00005.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.5158195495605469,
+      "value": {
+       "x": 40.94137191772461,
+       "y": 73.26400756835938,
+       "width": 12.414054870605469,
+       "height": 14.72042507595486,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.40133947134017944,
+      "value": {
+       "x": 40.88696002960205,
+       "y": 73.24859619140625,
+       "width": 12.463102340698242,
+       "height": 14.844258626302084,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00006.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.22195301949977875,
+      "value": {
+       "x": 42.747793197631836,
+       "y": 71.0965813530816,
+       "width": 12.347698211669922,
+       "height": 14.72503662109375,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.18584933876991272,
+      "value": {
+       "x": 42.7101993560791,
+       "y": 71.1586676703559,
+       "width": 12.39400863647461,
+       "height": 14.741143120659721,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00007.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.36559799313545227,
+      "value": {
+       "x": 43.67745399475098,
+       "y": 74.96197170681424,
+       "width": 11.96828842163086,
+       "height": 14.297349717881945,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.260079562664032,
+      "value": {
+       "x": 43.69069576263428,
+       "y": 74.97127956814236,
+       "width": 11.998758316040039,
+       "height": 14.329291449652779,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00008.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.6140791773796082,
+      "value": {
+       "x": 44.23509120941162,
+       "y": 69.39173380533855,
+       "width": 10.689725875854492,
+       "height": 12.826707628038195,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.5894027352333069,
+      "value": {
+       "x": 44.221296310424805,
+       "y": 69.37279595269098,
+       "width": 10.679054260253906,
+       "height": 12.87380642361111,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00009.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.5988722443580627,
+      "value": {
+       "x": 49.67293739318848,
+       "y": 68.11826070149739,
+       "width": 9.964675903320312,
+       "height": 12.420586480034721,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00010.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00011.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00012.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.15912729501724243,
+      "value": {
+       "x": 48.654069900512695,
+       "y": 74.97238159179688,
+       "width": 9.375152587890625,
+       "height": 11.232808430989584,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00013.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00014.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00015.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00016.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00017.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00018.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00019.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00020.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.19557353854179382,
+      "value": {
+       "x": 49.73746299743652,
+       "y": 73.61248440212674,
+       "width": 9.058380126953125,
+       "height": 11.153072781032986,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00021.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00022.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00023.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00024.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00025.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00026.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00027.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00028.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00029.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00030.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00031.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00032.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00033.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.4968412518501282,
+      "value": {
+       "x": 44.902334213256836,
+       "y": 46.89735412597656,
+       "width": 7.999305725097656,
+       "height": 12.381922403971354,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00034.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8809126615524292,
+      "value": {
+       "x": 43.99411201477051,
+       "y": 49.829444885253906,
+       "width": 9.63186264038086,
+       "height": 13.83487277560764,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00035.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8322708606719971,
+      "value": {
+       "x": 43.626041412353516,
+       "y": 51.480984157986114,
+       "width": 12.118206024169922,
+       "height": 16.197611490885418,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7864899039268494,
+      "value": {
+       "x": 43.63583564758301,
+       "y": 51.35982089572482,
+       "width": 12.085609436035156,
+       "height": 16.433639526367188,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.3226949870586395,
+      "value": {
+       "x": 81.66234970092773,
+       "y": 55.72132110595703,
+       "width": 18.337650299072266,
+       "height": 33.52948930528429,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00036.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.6937152147293091,
+      "value": {
+       "x": 38.35951328277588,
+       "y": 51.932152642144096,
+       "width": 15.920896530151367,
+       "height": 21.155420939127605,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.587266206741333,
+      "value": {
+       "x": 38.39949607849121,
+       "y": 51.99791802300347,
+       "width": 15.854854583740234,
+       "height": 21.18259006076389,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00037.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7548053860664368,
+      "value": {
+       "x": 38.78011703491211,
+       "y": 53.64130655924479,
+       "width": 18.639278411865234,
+       "height": 23.45618353949653,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7413957715034485,
+      "value": {
+       "x": 38.75200033187866,
+       "y": 53.65389506022135,
+       "width": 18.621561527252197,
+       "height": 23.53325737847222,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.2705056369304657,
+      "value": {
+       "x": 91.31778717041016,
+       "y": 57.6102786593967,
+       "width": 8.680839538574219,
+       "height": 25.286102294921875,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00038.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7598183155059814,
+      "value": {
+       "x": 39.24492835998535,
+       "y": 50.58784484863281,
+       "width": 18.937740325927734,
+       "height": 23.260752360026043,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.3101291060447693,
+      "value": {
+       "x": 39.20440673828125,
+       "y": 48.877461751302086,
+       "width": 19.268484115600586,
+       "height": 25.02706739637587,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00039.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.5628108382225037,
+      "value": {
+       "x": 39.60139989852905,
+       "y": 49.564734564887154,
+       "width": 19.167959690093994,
+       "height": 23.985426161024307,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.4800506830215454,
+      "value": {
+       "x": 39.55401420593262,
+       "y": 49.606874254014755,
+       "width": 19.29755210876465,
+       "height": 23.923356797960068,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.42566701769828796,
+      "value": {
+       "x": 39.52152490615845,
+       "y": 44.36922709147135,
+       "width": 22.61251211166382,
+       "height": 29.08246358235677,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00040.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9527548551559448,
+      "value": {
+       "x": 40.250186920166016,
+       "y": 49.69249301486545,
+       "width": 20.34130096435547,
+       "height": 25.644446478949654,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7195523977279663,
+      "value": {
+       "x": 40.30447006225586,
+       "y": 49.71828036838107,
+       "width": 20.281009674072266,
+       "height": 25.60340033637153,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00041.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9061157703399658,
+      "value": {
+       "x": 37.80878305435181,
+       "y": 50.5051761203342,
+       "width": 24.814279079437256,
+       "height": 31.029849582248264,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00042.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00043.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8461574912071228,
+      "value": {
+       "x": 41.881842613220215,
+       "y": 39.95042588975694,
+       "width": 30.07944107055664,
+       "height": 39.91346571180556,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00044.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.600574791431427,
+      "value": {
+       "x": 39.120168685913086,
+       "y": 44.98539394802518,
+       "width": 30.128116607666016,
+       "height": 37.369384765625,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00045.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.517642080783844,
+      "value": {
+       "x": 37.78643608093262,
+       "y": 45.06465488009982,
+       "width": 30.312585830688477,
+       "height": 37.02343410915799,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00046.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7397800087928772,
+      "value": {
+       "x": 32.954115867614746,
+       "y": 18.473163180881077,
+       "width": 30.357141494750977,
+       "height": 71.92721896701389,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.4007676839828491,
+      "value": {
+       "x": 32.9733943939209,
+       "y": 45.666186014811196,
+       "width": 30.391950607299805,
+       "height": 44.618424309624565,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00047.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00048.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00049.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00050.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00051.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7873785495758057,
+      "value": {
+       "x": 43.6622428894043,
+       "y": 57.89155748155382,
+       "width": 20.774011611938477,
+       "height": 30.720418294270832,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00052.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.5351465940475464,
+      "value": {
+       "x": 41.08034133911133,
+       "y": 52.578633626302086,
+       "width": 19.29819107055664,
+       "height": 25.648481580946182,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00053.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.5442259311676025,
+      "value": {
+       "x": 39.0064263343811,
+       "y": 52.9590098063151,
+       "width": 19.0964674949646,
+       "height": 24.603135850694443,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.3513486683368683,
+      "value": {
+       "x": 39.026713371276855,
+       "y": 52.79820760091146,
+       "width": 19.114055633544922,
+       "height": 24.605322943793404,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.34143173694610596,
+      "value": {
+       "x": 38.97552490234375,
+       "y": 30.99377950032552,
+       "width": 19.26152229309082,
+       "height": 46.53700934516059,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00054.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.2649782598018646,
+      "value": {
+       "x": 39.79755163192749,
+       "y": 32.05767313639323,
+       "width": 19.309542179107666,
+       "height": 44.73411560058594,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.18323896825313568,
+      "value": {
+       "x": 39.88741874694824,
+       "y": 51.90870496961806,
+       "width": 19.086532592773438,
+       "height": 25.002085367838543,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00055.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.6213650107383728,
+      "value": {
+       "x": 39.881205558776855,
+       "y": 53.51152208116319,
+       "width": 18.39381217956543,
+       "height": 24.083167182074654,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.24799665808677673,
+      "value": {
+       "x": 39.75685119628906,
+       "y": 30.87573793199327,
+       "width": 18.572139739990234,
+       "height": 46.71454323662652,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00056.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8446791172027588,
+      "value": {
+       "x": 46.819353103637695,
+       "y": 64.60678948296442,
+       "width": 15.363178253173828,
+       "height": 21.414506700303818,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.4699513912200928,
+      "value": {
+       "x": 46.812686920166016,
+       "y": 58.447324964735245,
+       "width": 15.321884155273438,
+       "height": 27.398512098524307,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00057.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.4390898048877716,
+      "value": {
+       "x": 43.73903274536133,
+       "y": 63.98225572374132,
+       "width": 12.831296920776367,
+       "height": 17.165171305338543,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.3102187216281891,
+      "value": {
+       "x": 43.7198543548584,
+       "y": 63.48006354437934,
+       "width": 12.845993041992188,
+       "height": 17.67428927951389,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00058.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00059.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00060.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00061.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00062.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.23527513444423676,
+      "value": {
+       "x": 49.740309715270996,
+       "y": 59.42638821072049,
+       "width": 10.110063552856445,
+       "height": 11.340145534939236,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.18887212872505188,
+      "value": {
+       "x": 49.768524169921875,
+       "y": 59.205025566948784,
+       "width": 10.07242202758789,
+       "height": 11.563347710503471,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00063.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00064.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00065.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.15956510603427887,
+      "value": {
+       "x": 48.453073501586914,
+       "y": 59.91223653157552,
+       "width": 9.908409118652344,
+       "height": 11.150673760308159,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00066.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00067.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00068.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00069.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": []
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00070.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.46254557371139526,
+      "value": {
+       "x": 45.24740219116211,
+       "y": 64.96690538194444,
+       "width": 8.765449523925781,
+       "height": 13.276858859592014,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00071.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8484706878662109,
+      "value": {
+       "x": 44.566636085510254,
+       "y": 64.81627570258246,
+       "width": 9.425725936889648,
+       "height": 14.856974283854166,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00072.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8554304242134094,
+      "value": {
+       "x": 44.74626064300537,
+       "y": 64.05225965711806,
+       "width": 11.398344039916992,
+       "height": 15.968136257595486,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00073.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9565101265907288,
+      "value": {
+       "x": 37.62230396270752,
+       "y": 64.61588541666667,
+       "width": 12.273216247558594,
+       "height": 15.903676350911459,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9405344724655151,
+      "value": {
+       "x": 37.58934020996094,
+       "y": 64.65202331542969,
+       "width": 12.35630989074707,
+       "height": 15.840945773654514,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00074.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9656059741973877,
+      "value": {
+       "x": 35.455896854400635,
+       "y": 62.102084689670136,
+       "width": 12.30426549911499,
+       "height": 15.632171630859375,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9494841694831848,
+      "value": {
+       "x": 35.46502113342285,
+       "y": 62.10090637207031,
+       "width": 12.293949127197266,
+       "height": 15.605214436848959,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00075.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9646931290626526,
+      "value": {
+       "x": 35.170135498046875,
+       "y": 60.11506822374132,
+       "width": 12.532281875610352,
+       "height": 16.051279703776043,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9599378705024719,
+      "value": {
+       "x": 35.149686336517334,
+       "y": 60.16322665744357,
+       "width": 12.49056100845337,
+       "height": 15.99700927734375,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00076.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9878042936325073,
+      "value": {
+       "x": 34.76381778717041,
+       "y": 63.66560618082682,
+       "width": 14.458818435668945,
+       "height": 17.991328769259983,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9374765753746033,
+      "value": {
+       "x": 34.76357460021973,
+       "y": 63.66506788465712,
+       "width": 14.463567733764648,
+       "height": 17.949439154730904,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00077.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9842942357063293,
+      "value": {
+       "x": 40.62809944152832,
+       "y": 65.28868357340495,
+       "width": 18.3868408203125,
+       "height": 21.982688903808594,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9586053490638733,
+      "value": {
+       "x": 40.65134048461914,
+       "y": 65.21461486816406,
+       "width": 18.330001831054688,
+       "height": 22.15508355034722,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00078.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9708274006843567,
+      "value": {
+       "x": 43.503103256225586,
+       "y": 64.32651095920139,
+       "width": 21.823415756225586,
+       "height": 24.276411268446182,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9411044716835022,
+      "value": {
+       "x": 43.53471755981445,
+       "y": 64.30763668484158,
+       "width": 21.786022186279297,
+       "height": 24.353099399142796,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00079.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9749255180358887,
+      "value": {
+       "x": 46.73876762390137,
+       "y": 57.07898457845052,
+       "width": 23.40221405029297,
+       "height": 25.02712673611111,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8738466501235962,
+      "value": {
+       "x": 46.70344352722168,
+       "y": 57.17853122287326,
+       "width": 23.462066650390625,
+       "height": 24.80339898003472,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00080.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9773482084274292,
+      "value": {
+       "x": 47.72059440612793,
+       "y": 60.366202460394966,
+       "width": 25.033721923828125,
+       "height": 25.264943440755207,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8328610062599182,
+      "value": {
+       "x": 47.697439193725586,
+       "y": 60.67286173502604,
+       "width": 25.31270980834961,
+       "height": 24.767947726779514,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.15761862695217133,
+      "value": {
+       "x": 47.78627395629883,
+       "y": 29.137354956732857,
+       "width": 26.729354858398438,
+       "height": 56.4826774597168,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00081.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9567654132843018,
+      "value": {
+       "x": 47.883853912353516,
+       "y": 64.77095709906683,
+       "width": 25.81587791442871,
+       "height": 25.521036783854168,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.82387775182724,
+      "value": {
+       "x": 48.00490379333496,
+       "y": 65.00848134358723,
+       "width": 25.79909324645996,
+       "height": 25.184864468044704,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.15839962661266327,
+      "value": {
+       "x": 48.21128845214844,
+       "y": 33.10685899522569,
+       "width": 28.95599365234375,
+       "height": 57.38408406575521,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00082.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9799918532371521,
+      "value": {
+       "x": 47.70212173461914,
+       "y": 64.86527336968317,
+       "width": 25.810108184814453,
+       "height": 25.671895345052082,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8406084179878235,
+      "value": {
+       "x": 47.749576568603516,
+       "y": 65.07389492458768,
+       "width": 25.98339080810547,
+       "height": 25.289594862196182,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00083.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9807503819465637,
+      "value": {
+       "x": 47.472596168518066,
+       "y": 64.78257921006944,
+       "width": 25.750761032104492,
+       "height": 26.075863308376736,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.8700621128082275,
+      "value": {
+       "x": 47.38791465759277,
+       "y": 64.9707497490777,
+       "width": 25.974912643432617,
+       "height": 25.735443962944878,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00084.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.9302887320518494,
+      "value": {
+       "x": 45.369462966918945,
+       "y": 69.21067979600694,
+       "width": 26.8927001953125,
+       "height": 27.89520263671875,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.7829151153564453,
+      "value": {
+       "x": 45.360565185546875,
+       "y": 69.16454739040799,
+       "width": 26.865558624267578,
+       "height": 27.93969048394097,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00085.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.3140384256839752,
+      "value": {
+       "x": 38.22749137878418,
+       "y": 75.58890448676215,
+       "width": 33.33768844604492,
+       "height": 24.411095513237846,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.2305426299571991,
+      "value": {
+       "x": 38.198180198669434,
+       "y": 75.61699761284723,
+       "width": 33.74751091003418,
+       "height": 24.38300238715278,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.1624033898115158,
+      "value": {
+       "x": 38.57253551483154,
+       "y": 75.55118136935764,
+       "width": 33.73970985412598,
+       "height": 24.44881863064236,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00086.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.479422003030777,
+      "value": {
+       "x": 38.4640097618103,
+       "y": 23.878122965494793,
+       "width": 42.61009454727173,
+       "height": 76.1218770345052,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00087.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.5530157089233398,
+      "value": {
+       "x": 34.25873279571533,
+       "y": 20.969153510199654,
+       "width": 43.206119537353516,
+       "height": 79.03084648980035,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.4604019224643707,
+      "value": {
+       "x": 34.761338233947754,
+       "y": 58.983154296875,
+       "width": 42.52763748168945,
+       "height": 41.016845703125,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.4338149130344391,
+      "value": {
+       "x": 34.71661567687988,
+       "y": 59.05907524956597,
+       "width": 42.55114555358887,
+       "height": 40.94092475043403,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=to_label/2026-10-20_1531_00088.jpg"
+  },
+  "predictions": [
+   {
+    "model_version": "yolov8s-worldv2",
+    "result": [
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.5192853808403015,
+      "value": {
+       "x": 34.79917764663696,
+       "y": 60.66888173421224,
+       "width": 42.48698949813843,
+       "height": 39.33111826578776,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.4171372354030609,
+      "value": {
+       "x": 34.61116075515747,
+       "y": 21.795789930555557,
+       "width": 42.82747030258179,
+       "height": 78.20421006944444,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     },
+     {
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "original_width": 1280,
+      "original_height": 720,
+      "image_rotation": 0,
+      "score": 0.3235660493373871,
+      "value": {
+       "x": 34.93429660797119,
+       "y": 60.346154106987846,
+       "width": 42.352352142333984,
+       "height": 39.653845893012154,
+       "rotation": 0,
+       "rectanglelabels": [
+        "rc_car"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ }
+]

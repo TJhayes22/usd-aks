@@ -1,0 +1,40 @@
+# environments and secrets
+oak-env/
+ls-env/
+yolo-env/
+.venv/
+.env
+**/.env
+
+# caches
+__pycache__/
+*.pyc
+.mypy_cache/
+.pytest_cache/
+.depthai_cached_models/
+
+# datasets and generated files
+cone_dataset/
+fsoco_bounding_boxes_train/
+fsoco_yolo/
+merged/
+runs/
+*.zip
+*.csv
+data_collection/raw/
+data_collection/exports/
+data_collection/to_label/
+data_collection/ls_export/
+data_collection/weights/
+autonomy_replay*.png
+
+# model weights (the deployable .rvc2.tar.xz archives are still committed)
+*.pt
+
+# upstream Luxonis examples, kept locally for reference only
+oak-examples/
+
+# Claude Code files (kept local for now)
+CLAUDE.md
+CLAUDE.local.md
+.claude/settings.local.json
