@@ -8,11 +8,11 @@ Priority order (first match wins):
   5. In AUTO/SLOW: obstacle inside stop distance -> URGENT_STOP; inside slow_factor x -> SLOW;
      path confidence low for low_confidence_ticks in a row -> SLOW; otherwise AUTO
 """
-from typing import Optional
+from typing import Optional, Sequence
 
 from .config import Config
 from .geometry import relevant_obstacles, stop_threshold
-from .types import RcInput, State, World
+from .types import Health, RcInput, State, World
 
 DRIVING = (State.AUTO, State.SLOW, State.FAULT)
 
@@ -87,10 +87,15 @@ class Supervisor:
         self.state = initial
         self.fault_since: Optional[float] = None
         self.low_conf_ticks = 0
+        self.health = Health(initial, ok=True)
 
-    def run(self, world: World, rc: RcInput, now: float, stop_request: bool = False) -> State:
+    def run(self, world: World, rc: RcInput, now: float, stop_request: bool = False,
+            warnings: Sequence[str] = ()) -> State:
+        """warnings (e.g. recording stopped) are reported in self.health; they never change the state."""
         self.low_conf_ticks = self.low_conf_ticks + 1 if path_confidence_low(world, self.cfg) else 0
         new = step(self.state, world, rc, now, self.cfg, self.fault_since, stop_request, self.low_conf_ticks)
+        self.health = Health(new, ok=not warnings and new not in (State.FAULT, State.URGENT_STOP),
+                             warnings=tuple(warnings))
         if new == State.FAULT and self.state != State.FAULT:
             self.fault_since = now
         elif new != State.FAULT:

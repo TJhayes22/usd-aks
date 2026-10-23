@@ -14,6 +14,7 @@ vehicle:
 
 loop:
   hz: 20
+  history_max_ticks: 12000       # in-memory tick history (~10 min at 20 Hz); the tick log on disk has everything
 
 timeouts:
   rc_timeout_s: 0.5              # no RC packet for this long = link lost

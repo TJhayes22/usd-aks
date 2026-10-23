@@ -1,0 +1,38 @@
+# systemd USER unit for the AKS stack on the Jetson. Not enabled by default.
+#
+# Install and start:
+#   mkdir -p ~/.config/systemd/user
+#   cp ~/AKS_Root/deploy/aks.service ~/.config/systemd/user/
+#   systemctl --user daemon-reload
+#   systemctl --user enable --now aks.service
+#   sudo loginctl enable-linger "$USER"        # start at boot without logging in
+# Watch:  journalctl --user -u aks -f    (also $AKS_DATA/logs/aks.log)
+# Stop:   systemctl --user stop aks       (SIGTERM -> the loop sends full brake, then exits)
+# Remove: systemctl --user disable --now aks.service
+#
+# The stack currently runs with MOCK RC and vehicle adapters (the mock RC arms itself).
+# Before this drives real motors, replace them with the real RC receiver and motor
+# adapters and remove the auto-arm in autonomy/run.py. A restart always comes up DISARMED.
+#
+# %h = your home folder. Edit the paths if your layout differs from README "Running on the Jetson".
+
+[Unit]
+Description=AKS autonomy stack (lanes + supervisor)
+After=default.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/AKS_Root
+Environment=AKS_MODELS=%h/aks_models
+Environment=AKS_DATA=%h/aks_data
+Environment=AKS_DATA_MAX_GB=20
+Environment=AKS_DATA_MIN_FREE_GB=2
+Environment=PYTHONUNBUFFERED=1
+ExecStart=%h/venvs/aks/bin/python -m autonomy.run --source oak
+KillSignal=SIGTERM
+TimeoutStopSec=5
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

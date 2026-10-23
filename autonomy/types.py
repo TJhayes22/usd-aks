@@ -16,6 +16,14 @@ class State(Enum):
 
 
 @dataclass(frozen=True)
+class Health:
+    """What the car reports about itself (e.g. to the RCS Black Box). Warnings never change the state."""
+    state: State
+    ok: bool
+    warnings: Tuple[str, ...] = ()
+
+
+@dataclass(frozen=True)
 class Obstacle:
     cls: str        # "cone" / "person" / "kart"
     x: float        # m, right of the camera

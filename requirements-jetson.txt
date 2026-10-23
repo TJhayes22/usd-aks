@@ -1,0 +1,14 @@
+# Jetson Orin Nano (JetPack 6, Ubuntu 22.04, Python 3.10, aarch64): one venv at ~/venvs/aks
+# for the camera scripts, lane detection and the autonomy stack. Installed by scripts/setup_jetson.sh.
+#
+# depthai is pinned to the laptop's oak-env version (pip freeze there). numpy is NOT the laptop's
+# 2.5.4: numpy 2.3+ needs Python 3.11+, so 2.2.6 (what the autonomy tests run on) is used here.
+#
+# Not included: depthai-nodes (only oak-template/main.py's browser viewer uses it). Its 0.7.0
+# release pulls in opencv-python-headless, which overwrites cv2 and breaks imshow. If you need
+# the viewer:  pip install depthai-nodes==0.7.0 && pip install --force-reinstall --no-deps opencv-python==5.0.0.93
+depthai==3.11.0
+numpy==2.2.6
+opencv-python==5.0.0.93
+pyyaml==6.0.3
+python-dotenv==1.2.4

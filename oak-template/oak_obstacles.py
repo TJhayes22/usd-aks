@@ -23,6 +23,7 @@ import depthai as dai
 
 sys.path.append(str(Path(__file__).resolve().parents[1]))   # repo root, for autonomy.paths
 from autonomy.paths import DATA, MODELS  # noqa: E402
+from autonomy.storage import DataBudget  # noqa: E402
 
 # ---------------- CONFIG ----------------
 MODEL_ARCHIVE = MODELS / "aks_obj_detection.rvc2.tar.xz"   # override with --model
@@ -53,6 +54,8 @@ class ObstacleNode(dai.node.HostNode):
         self.sendProcessingToPipeline(True)
         self.show = False
         self.writer = None
+        self.budget = None        # DataBudget; when it runs out, CSV logging stops and detection carries on
+        self.log_stopped = False
         self.latest = []          # most recent obstacle list; the controller will read this
 
     def build(self, rgb: dai.Node.Output, detections: dai.Node.Output):
@@ -76,11 +79,18 @@ class ObstacleNode(dai.node.HostNode):
         obstacles.sort(key=lambda o: o.forward_m)   # nearest first
         self.latest = obstacles
 
+        if obstacles and self.writer and not self.log_stopped and self.budget is not None:
+            status = self.budget.check()
+            if not status.ok:
+                self.log_stopped = True
+                print(f"WARNING: obstacle CSV logging stopped ({status.reason}); detection keeps running")
         for o in obstacles:
             print(f"{o.label:7s} conf={o.conf:.2f} fwd={o.forward_m:5.2f} m  lat={o.lateral_m:+5.2f} m")
-            if self.writer:
-                self.writer.writerow([f"{o.ts:.3f}", o.label, f"{o.conf:.3f}",
-                                      f"{o.forward_m:.3f}", f"{o.lateral_m:.3f}"])
+            if self.writer and not self.log_stopped:
+                row = [f"{o.ts:.3f}", o.label, f"{o.conf:.3f}", f"{o.forward_m:.3f}", f"{o.lateral_m:.3f}"]
+                self.writer.writerow(row)
+                if self.budget is not None:
+                    self.budget.add(sum(len(v) for v in row) + len(row))
         if not obstacles:
             print("-- no obstacles --")
 
@@ -149,6 +159,7 @@ def main():
         node = p.create(ObstacleNode)
         node.show = args.show
         node.writer = writer
+        node.budget = DataBudget(DATA)
         node.build(snn.passthrough, snn.out)
 
         print("Starting pipeline (Ctrl+C to stop)...")

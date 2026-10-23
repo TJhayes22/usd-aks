@@ -291,9 +291,96 @@ autonomy\.venv\Scripts\python -m autonomy.replay "$env:AKS_DATA\obstacles.csv" -
 
 The replay command runs a recorded `obstacles.csv` through the whole stack in simulated time and saves a plot of steering, throttle/brake and state. Real camera, motor and RC adapters are still stubs. See `autonomy\README.md` for the design and the known gaps.
 
+Lane detection can drive the stack too, offline from a recorded clip or live from the OAK-D. RC and vehicle are mocks, so nothing moves:
+
+```powershell
+autonomy\.venv\Scripts\python -m autonomy.run --source clip.mp4 --plot run.png
+autonomy\.venv\Scripts\python -m autonomy.run --source oak
+```
+
+It needs a calibrated `lane_detection\lane_config.json` (see `lane_detection\README.md`).
+
 ---
 
-## 6. Troubleshooting
+## 6. Running on the Jetson
+
+The Jetson Orin Nano runs the same code from a git clone. Weights and data stay outside the clone:
+
+| Path | Holds |
+|---|---|
+| `~/AKS_Root` | git clone, code only |
+| `~/aks_models` | `.rvc2.tar.xz` model archives (`AKS_MODELS`), copied from the laptop |
+| `~/aks_data` | `raw/` frames, `recordings/` clips, `logs/` (`aks.log`, `ticks_*.csv`), `obstacles.csv` (`AKS_DATA`) |
+| `~/venvs/aks` | one Python 3.10 venv for the camera, lanes and autonomy (`requirements-jetson.txt`) |
+
+### Setup (once, safe to re-run)
+
+```bash
+git clone https://github.com/TJhayes22/usd-aks.git ~/AKS_Root
+bash ~/AKS_Root/scripts/setup_jetson.sh
+```
+
+The script:
+1. Creates the folders above.
+2. Builds `~/venvs/aks` from `requirements-jetson.txt`, which installs DepthAI 3.11.0 (the same as the laptop).
+3. Installs the Luxonis udev rule so the OAK-D works without root. Unplug and replug the camera afterwards.
+4. Checks the install from a different directory.
+5. Prints the `export` lines to add to `~/.bashrc`.
+
+Then copy the model over from the laptop:
+
+```powershell
+scp models\aks_obj_detection.rvc2.tar.xz <user>@<jetson>:~/aks_models/
+```
+
+`requirements-jetson.txt` pins `numpy==2.2.6`, not the laptop's 2.5.4, because numpy 2.3 and later need Python 3.11+. It also leaves out `depthai-nodes`, which is only used by `main.py`'s browser viewer. That package pulls in `opencv-python-headless`, which breaks preview windows; the file explains how to add it if you need the viewer.
+
+### Running
+
+From `~/AKS_Root`, with the venv active:
+
+```bash
+python -m autonomy.run --source oak                         # lanes from the OAK-D, mock RC/vehicle
+python -m autonomy.run --source ~/aks_data/recordings/run1.mp4
+python oak-template/oak_obstacles.py                        # obstacle list -> ~/aks_data/obstacles.csv
+```
+
+Only one program can hold the OAK-D at a time.
+
+### Disk space
+
+Recording stops before the SSD fills, and nothing is ever deleted. The limits are set by environment variables:
+
+| Variable | Default | Meaning |
+|---|---|---|
+| `AKS_DATA_MAX_GB` | 20 | Recording stops when `$AKS_DATA` reaches this size |
+| `AKS_DATA_MIN_FREE_GB` | 2 | Recording also stops when the disk has this little free space left |
+
+Hitting a limit **only stops recording**: tick logs, `obstacles.csv` rows and `record_frames.py` frames. The driving stack keeps running normally. The warning appears in `aks.log`, the console and the supervisor's health status (`health: NOT ok`, with the reason), but it never changes the driving state.
+
+`aks.log` itself rotates at 10 MB and keeps 5 old files, so logs stay under 60 MB. To free space, copy recordings off the Jetson and delete them yourself.
+
+### Start at boot (optional)
+
+`deploy/aks.service` is a systemd user service. It isn't enabled by default. It runs `python -m autonomy.run --source oak` from `~/AKS_Root`, with `AKS_MODELS`, `AKS_DATA` and the disk limits set, and restarts it if it crashes.
+
+```bash
+mkdir -p ~/.config/systemd/user
+cp ~/AKS_Root/deploy/aks.service ~/.config/systemd/user/
+systemctl --user daemon-reload
+systemctl --user enable --now aks.service
+sudo loginctl enable-linger "$USER"          # start at boot without logging in
+journalctl --user -u aks -f                  # watch it
+systemctl --user disable --now aks.service   # turn it off again
+```
+
+Stopping the service sends SIGTERM, which makes the loop send full brake before exiting. After a restart, the stack comes up DISARMED.
+
+**Before this drives real motors**, replace the mock RC and vehicle with the real RC receiver and motor adapters, and remove the mock RC's auto-arm in `autonomy/run.py`. Today the service only exercises perception and decisions.
+
+---
+
+## 7. Troubleshooting
 
 | Symptom | Cause / fix |
 |---|---|
@@ -306,18 +393,23 @@ The replay command runs a recorded `obstacles.csv` through the whole stack in si
 | `Dataset ... images not found, missing path C:\content\...` | `data.yaml` still has the Colab path. Edit its `path:` line. |
 | Camera not found | `python -c "import depthai as dai; print(dai.Device.getAllAvailableDevices())"`. Check the USB 3 cable and close other programs using it. |
 | CUDA out of memory during training | Lower `batch` in `train.py`. |
+| `Model archive not found: ~/aks_models/...` | Copy the `.rvc2.tar.xz` into `$AKS_MODELS`, set `AKS_MODELS`, or pass `--model`. |
+| `numpy==2.5.4` won't install on the Jetson | numpy 2.3+ needs Python 3.11+. Install from `requirements-jetson.txt` (numpy 2.2.6). |
+| `$'\r': command not found` running `setup_jetson.sh` | Windows line endings. `.gitattributes` keeps `*.sh` LF on checkout; if you copied the file by hand, run `sed -i 's/\r$//' scripts/setup_jetson.sh`. |
+| OAK-D not found on the Jetson, works with `sudo` | udev rule missing. Re-run `setup_jetson.sh`, then unplug and replug the camera. |
+| `recording stopped: ... cap is ...` | `$AKS_DATA` reached `AKS_DATA_MAX_GB` (or the disk is nearly full). Copy data off, delete it, or raise the limit. Driving isn't affected. |
 
 ---
 
-## 7. Security and git
+## 8. Security and git
 
 - Never commit `.env`, API keys, or environment folders.
-- Suggested `.gitignore`: `oak-env/`, `ls-env/`, `yolo-env/`, `.env`, `merged/`, `runs/`, `*.zip`, `*.csv`, `__pycache__/`, `data_collection/raw/`, `data_collection/exports/`.
+- Model weights (`*.pt`, `*.rvc2.tar.xz`), datasets, recordings and logs are gitignored. Keep them in `$AKS_MODELS` / `$AKS_DATA`.
 - Back up raw frames and label exports to Drive. The labeling work can't be regenerated.
 
 ---
 
-## 8. Status and next steps
+## 9. Status and next steps
 
 Working:
 - YOLO11n 3-class detector, about 17 FPS at 512x288 on the OAK-D (network only)
@@ -327,12 +419,14 @@ Working:
 - Frame recording
 - Own RC-car data labeled and merged (`own_*` images), plus the `rc_finetune` run
 - Autonomy core (`autonomy\`): supervisor, cone/lane planner, pure pursuit controller, safety layer, fixed-rate loop, mock and CSV-replay adapters, and tests
+- Lane detection (`lane_detection\`) wired into the autonomy stack as a second path source, runnable offline from clips
+- Portable paths (`AKS_MODELS` / `AKS_DATA`) and a Jetson setup script, disk cap, and optional systemd service
 
 Not done yet:
 - Reach 25+ FPS, and measure real FPS with stereo depth running.
 - Test distance and lateral-sign accuracy with a tape measure, and convert obstacles to the car frame (x right, y forward, origin on the ground under the camera).
 - Collect more of your own data, retrain, and re-run the range test.
-- Lane detection for tape lines (`lane_detection\` is empty).
-- Real adapters for the autonomy stack (OAK-D perception, motors and mechanical brake, RC receiver), a real tracker, and measuring latency and braking deceleration.
+- Calibrate lane detection on the final camera mount and tune the tape color.
+- Real adapters for the autonomy stack (OAK-D perception sharing one pipeline for detections and lanes, motors and mechanical brake, RC receiver), a real tracker, and measuring latency and braking deceleration.
 - Lidar-camera fusion. The camera script is written so only the distance source needs to change.
-- Port to the Jetson (Python 3.10): same scripts, new model path, matching `depthai` version, and USB udev rules.
+- First run on the Jetson hardware: confirm the JetPack version ships Python 3.10, then measure FPS there.

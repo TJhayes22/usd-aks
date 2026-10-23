@@ -24,6 +24,7 @@ class VehicleCfg:
 @dataclass(frozen=True)
 class LoopCfg:
     hz: float
+    history_max_ticks: int
 
 
 @dataclass(frozen=True)

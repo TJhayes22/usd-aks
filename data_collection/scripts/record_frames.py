@@ -26,6 +26,7 @@ import numpy as np
 
 sys.path.append(str(Path(__file__).resolve().parents[2]))   # repo root, for autonomy.paths
 from autonomy.paths import DATA  # noqa: E402
+from autonomy.storage import DataBudget  # noqa: E402
 
 DEFAULT_OUT = DATA / "raw"
 FPS = 15                      # camera rate; saving is throttled by --interval anyway
@@ -75,6 +76,11 @@ def main():
         "min_sharp": args.min_sharp,
         "min_change": args.min_change,
     }, indent=2), encoding="utf-8")
+
+    budget = DataBudget(DATA)   # AKS_DATA_MAX_GB / AKS_DATA_MIN_FREE_GB; recording stops, nothing is deleted
+    status = budget.check(force=True)
+    if not status.ok:
+        raise SystemExit(f"Not recording: {status.reason}")
 
     saved = skipped_blur = skipped_dup = 0
     last_save = 0.0
@@ -132,9 +138,14 @@ def main():
                 else:
                     small = small_gray(img)
 
+                status = budget.check()
+                if not status.ok:
+                    print(f"\nWARNING: recording stopped, {status.reason}")
+                    break
                 counter += 1
-                cv2.imwrite(str(session_dir / f"{args.session}_{counter:05d}.jpg"), img,
-                            [cv2.IMWRITE_JPEG_QUALITY, 95])
+                out_file = session_dir / f"{args.session}_{counter:05d}.jpg"
+                cv2.imwrite(str(out_file), img, [cv2.IMWRITE_JPEG_QUALITY, 95])
+                budget.add(out_file.stat().st_size if out_file.exists() else 0)
                 last_small = small
                 saved += 1
                 if saved % 20 == 0:

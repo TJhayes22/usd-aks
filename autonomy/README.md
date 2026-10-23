@@ -43,7 +43,9 @@ perception adapter -> tracker (stub) -> planner -> supervisor -> controller -> s
 | `controller.py` | Pure pursuit steering, `delta = atan(2·L·sin α / Ld)`, measured from the rear axle. Target speed comes from the state. Braking uses `d_stop = v·latency + v²/2a` plus a per-class margin. Only obstacles inside the corridor along the path count. A kart ahead caps speed to keep `follow_distance_m`, and cones are never braked for. |
 | `safety.py` | Clamps outputs to limits. URGENT_STOP, FAULT and DISARMED force full brake with zero throttle. MANUAL passes the RC sticks through (negative throttle = brake). |
 | `geometry.py` | The corridor and stopping-distance math, shared by the supervisor and controller. |
-| `loop.py` | Fixed-rate loop. It warns on overrun and re-anchors if it falls more than a tick behind. If any exception occurs, it sends full brake before re-raising. `SimClock` provides simulated time for tests and replay. |
+| `loop.py` | Fixed-rate loop. It warns on overrun and re-anchors if it falls more than a tick behind. If anything ends it abnormally (an exception, Ctrl+C, or SIGTERM turned into `SystemExit`), it sends full brake before re-raising. It collects `warnings` from adapters into the supervisor's `health`, and keeps a bounded in-memory history (`loop.history_max_ticks`). `SimClock` provides simulated time for tests and replay. |
+| `paths.py` | `REPO`, `MODELS` (`AKS_MODELS`) and `DATA` (`AKS_DATA`), stdlib only, so any venv can import it. |
+| `storage.py` | `DataBudget` stops recording before `$AKS_DATA` exceeds `AKS_DATA_MAX_GB` or the disk drops below `AKS_DATA_MIN_FREE_GB`. It never deletes anything. `setup_logging()` writes a rotating `aks.log`. |
 
 ## States
 
@@ -63,6 +65,7 @@ DISARMED --arm (switch on MANUAL)--> MANUAL <--RC mode switch--> AUTO <--> SLOW
 - **RC loss goes straight to URGENT_STOP**, with no FAULT step, because the rulebook requires an Urgent Stop on RC loss.
 - **Stale perception is ignored in MANUAL**, since a human is driving.
 - **`RcInput.allowed_auto`** is reserved for the competition's Race Control System (RCS) black box. `None` means no black box is attached.
+- **Health** (`Supervisor.health`) reports the state, `ok`, and any adapter warnings, such as "recording stopped: disk cap". Warnings never change the state. `ok` is false during FAULT or URGENT_STOP, or while there are any warnings. It's what the RCS Black Box "Health Status" will be fed from.
 
 ## Adapters
 
@@ -72,6 +75,7 @@ DISARMED --arm (switch on MANUAL)--> MANUAL <--RC mode switch--> AUTO <--> SLOW
 | `CsvReplayPerception` | Replays `obstacles.csv` from `oak_obstacles.py`, with `x = csv_lateral_sign · lateral_m` and `y = forward_m`. |
 | `LanePerception` | Runs `lane_detection.LaneDetector` on frames from a clip, image, webcam or the OAK-D and returns the lane center as a `Path` (`source="lanes"`). It can wrap another perception adapter: those obstacles pass through, and their detector `box`es are given to the lane detector as `exclude_boxes`. Clip frames are timed by the clip's FPS. |
 | `MockRc` | Scripted RC inputs. When the link is lost, the packet timestamp stops advancing. |
+| `TickRecorder` | Writes one CSV row per tick to `$AKS_DATA/logs/ticks_*.csv` within the `DataBudget`. At the cap it stops for good and reports a warning; the file is kept. |
 | `MockVehicle` | Logs every command and simulates speed: throttle `t` settles at `t · max_speed`. |
 | `OakPerception`, `MotorVehicle`, `RcReceiver` | Stubs that raise `NotImplementedError`. |
 
