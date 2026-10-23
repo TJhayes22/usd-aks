@@ -1,13 +1,14 @@
 """Scripted perception for tests and bench runs.
 
 A script is a list of (t_start, obstacles) segments in loop time. obstacles is a list of
-(cls, x, y) tuples, or None to simulate the camera going silent (frames stop, data goes stale).
+(cls, x, y) or (cls, x, y, box) tuples, box = normalized (xmin, ymin, xmax, ymax) detector box,
+or None to simulate the camera going silent (frames stop, data goes stale).
 """
 from typing import List, Optional, Sequence, Tuple
 
 from ..types import Obstacle, PerceptionFrame
 
-Segment = Tuple[float, Optional[Sequence[Tuple[str, float, float]]]]
+Segment = Tuple[float, Optional[Sequence[tuple]]]
 
 
 class MockPerception:
@@ -21,7 +22,8 @@ class MockPerception:
         if not active or active[-1][1] is None:
             return PerceptionFrame(t=self.last_t)   # silent camera: timestamp stops advancing
         self.last_t = now
-        obstacles = [Obstacle(cls, x, y, self.conf, now) for cls, x, y in active[-1][1]]
+        obstacles = [Obstacle(cls, x, y, self.conf, now, box[0] if box else None)
+                     for cls, x, y, *box in active[-1][1]]
         return PerceptionFrame(t=now, obstacles=obstacles)
 
 

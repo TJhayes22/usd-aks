@@ -38,12 +38,14 @@ class PlannerCfg:
     cone_track_width_m: float
     one_side_confidence: float
     full_confidence_pairs: int
-    prefer: str
+    lane_sample_start_m: float
+    lane_sample_step_m: float
 
 
 @dataclass(frozen=True)
 class SupervisorCfg:
     min_path_confidence: float
+    low_confidence_ticks: int
     slow_factor: float
 
 
@@ -108,8 +110,8 @@ def from_dict(raw: dict) -> Config:
         raise ValueError(f"config: unknown sections {sorted(unknown)}")
     if "default" not in groups["obstacles"].stop_margin_m:
         raise ValueError("obstacles.stop_margin_m needs a 'default' entry")
-    if groups["planner"].prefer not in ("lane", "cones"):
-        raise ValueError("planner.prefer must be 'lane' or 'cones'")
+    if groups["supervisor"].low_confidence_ticks < 1:
+        raise ValueError("supervisor.low_confidence_ticks must be at least 1")
     return Config(**groups)
 
 

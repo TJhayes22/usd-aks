@@ -46,15 +46,3 @@ def test_cones_behind_ignored(cfg):
     assert plan([obs("cone", -0.5, -1.0)], cfg).confidence == 0
 
 
-def test_lane_center_used(cfg):
-    lane = np.array([[0.0, 3.0], [0.0, 0.5], [0.1, 1.5]])
-    path = plan([], cfg, lane_center=lane, lane_confidence=0.8)
-    assert path.source == "lane" and path.confidence == 0.8
-    assert list(path.points[:, 1]) == [0.5, 1.5, 3.0]
-
-
-def test_preference_between_lane_and_cones(cfg):
-    lane = np.array([[0.0, 0.5], [0.0, 3.0]])
-    cones = [obs("cone", -0.5, 2.0), obs("cone", 0.5, 2.0)]
-    assert plan(cones, cfg, lane, 0.8).source == ("lane" if cfg.planner.prefer == "lane" else "cones")
-    assert plan(cones, cfg, lane, 0.0).source == "cones"   # unusable lane falls back to cones

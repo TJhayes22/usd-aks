@@ -18,7 +18,8 @@ from autonomy.paths import REPO
 MODULES = [
     "autonomy.paths", "autonomy.types", "autonomy.config", "autonomy.geometry",
     "autonomy.supervisor", "autonomy.planner", "autonomy.controller", "autonomy.safety",
-    "autonomy.tracker", "autonomy.loop", "autonomy.replay",
+    "autonomy.tracker", "autonomy.loop", "autonomy.replay", "autonomy.run",
+    "autonomy.adapters.lane_perception",
     "autonomy.adapters.mock_perception", "autonomy.adapters.mock_rc", "autonomy.adapters.mock_vehicle",
     "autonomy.adapters.csv_replay", "autonomy.adapters.oak_perception", "autonomy.adapters.motor_vehicle",
     "lane_detection", "lane_detection.lane_detector", "lane_detection.sources",

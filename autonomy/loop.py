@@ -63,10 +63,9 @@ class Loop:
     def tick(self, now: float) -> TickLog:
         frame = self.perception.run(now)
         obstacles = self.tracker.run(frame.obstacles)
-        path = self.planner.run(obstacles, frame.lane_center, frame.lane_confidence)
+        path = self.planner.run(obstacles, frame.lane_path)
         world = World(t_perception=frame.t, obstacles=obstacles, path=path,
-                      speed_mps=self.vehicle.speed_mps,
-                      lane_center=frame.lane_center, lane_confidence=frame.lane_confidence)
+                      speed_mps=self.vehicle.speed_mps, lane_path=frame.lane_path)
         rc = self.rc.run(now)
         state = self.supervisor.run(world, rc, now)
         cmd = self.safety.run(state, self.controller.run(state, world), rc)

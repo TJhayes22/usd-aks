@@ -24,10 +24,13 @@ planner:
   cone_track_width_m: 1.0        # course width between cone lines; one-sided paths offset by half of it
   one_side_confidence: 0.5
   full_confidence_pairs: 2       # cone pairs needed for confidence 1.0
-  prefer: lane                   # lane or cones, when both are available
+  # path priority: cones on both sides > lane center line > one-sided cones > none
+  lane_sample_start_m: 0.3       # lane path sampled from here out to control.ld_max_m
+  lane_sample_step_m: 0.1
 
 supervisor:
-  min_path_confidence: 0.3       # below this -> SLOW
+  min_path_confidence: 0.3       # below this ...
+  low_confidence_ticks: 3        # ... for this many consecutive ticks -> SLOW (one bad lane frame doesn't)
   slow_factor: 2.0               # obstacle within slow_factor x stop distance -> SLOW
 
 obstacles:

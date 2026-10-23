@@ -33,9 +33,18 @@ def test_cone_in_path_is_not_an_obstacle(cfg):
     assert step(State.AUTO, w, rc_ok(NOW), NOW, cfg) == State.AUTO
 
 
-def test_empty_frame_slows(cfg):
-    w = world(NOW, [], path=Path(np.zeros((0, 2)), 0.0, "none"))
-    assert step(State.AUTO, w, rc_ok(NOW), NOW, cfg) == State.SLOW
+def test_empty_frame_slows_after_n_ticks(cfg):
+    n = cfg.supervisor.low_confidence_ticks
+    sup = Supervisor(cfg, initial=State.AUTO)
+    period = 1.0 / cfg.loop.hz
+    states = []
+    for i in range(n):
+        t = NOW + i * period
+        states.append(sup.run(world(t, [], path=Path(np.zeros((0, 2)), 0.0, "none")), rc_ok(t), t))
+    assert states[:-1] == [State.AUTO] * (n - 1)   # brief dropouts don't slow the car
+    assert states[-1] == State.SLOW
+    t = NOW + n * period
+    assert sup.run(world(t), rc_ok(t), t) == State.AUTO   # good path again: recover at once
 
 
 def test_stale_perception_faults_then_escalates(cfg):

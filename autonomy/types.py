@@ -1,7 +1,7 @@
 """Shared data types. Car frame: meters, x right, y forward, origin on the ground at the camera."""
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import List, Optional
+from typing import List, Optional, Tuple
 
 import numpy as np
 
@@ -22,6 +22,7 @@ class Obstacle:
     y: float        # m, ahead of the camera
     conf: float
     t: float        # s, perception timestamp
+    box: Optional[Tuple[float, float, float, float]] = None   # detector box (xmin, ymin, xmax, ymax), 0-1 image coords
 
 
 def _empty_points() -> np.ndarray:
@@ -32,7 +33,7 @@ def _empty_points() -> np.ndarray:
 class Path:
     points: np.ndarray = field(default_factory=_empty_points)   # (N, 2) of (x, y), nearest first
     confidence: float = 0.0                                      # 0 = no usable path
-    source: str = "none"                                         # cones / cones_left / cones_right / lane / none
+    source: str = "none"                                         # cones / cones_left / cones_right / lanes / none
 
 
 @dataclass(frozen=True)
@@ -60,8 +61,7 @@ class PerceptionFrame:
     """What a perception adapter returns each tick."""
     t: float                                   # s, timestamp of this frame; -inf = no frame yet
     obstacles: List[Obstacle] = field(default_factory=list)
-    lane_center: Optional[np.ndarray] = None
-    lane_confidence: float = 0.0
+    lane_path: Optional[Path] = None           # lane center line as a path, if lane detection ran
 
 
 @dataclass
@@ -70,5 +70,4 @@ class World:
     obstacles: List[Obstacle] = field(default_factory=list)
     path: Path = field(default_factory=Path)
     speed_mps: float = 0.0                     # current speed estimate
-    lane_center: Optional[np.ndarray] = None   # (N, 2) lane center line, if lane detection ran
-    lane_confidence: float = 0.0
+    lane_path: Optional[Path] = None           # lane center line, if lane detection ran

@@ -27,6 +27,7 @@ data_collection/to_label/
 data_collection/ls_export/
 data_collection/weights/
 autonomy_replay*.png
+autonomy_run*.png
 
 # model weights and runtime data live outside the repo ($AKS_MODELS, $AKS_DATA)
 aks_models/

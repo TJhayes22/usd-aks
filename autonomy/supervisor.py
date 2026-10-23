@@ -6,7 +6,7 @@ Priority order (first match wins):
   3. Stale perception while driving autonomously -> FAULT; FAULT held for fault_escalate_s -> URGENT_STOP
   4. MANUAL <-> AUTO only on the RC mode switch (AUTO also needs fresh perception)
   5. In AUTO/SLOW: obstacle inside stop distance -> URGENT_STOP; inside slow_factor x -> SLOW;
-     low path confidence -> SLOW; otherwise AUTO
+     path confidence low for low_confidence_ticks in a row -> SLOW; otherwise AUTO
 """
 from typing import Optional
 
@@ -25,9 +25,15 @@ def perception_stale(world: World, now: float, cfg: Config) -> bool:
     return now - world.t_perception > cfg.timeouts.perception_timeout_s
 
 
-def assess(world: World, cfg: Config) -> State:
-    """AUTO, SLOW or URGENT_STOP from obstacles in the corridor and path confidence."""
-    slow = world.path.confidence < cfg.supervisor.min_path_confidence
+def path_confidence_low(world: World, cfg: Config) -> bool:
+    return world.path.confidence < cfg.supervisor.min_path_confidence
+
+
+def assess(world: World, cfg: Config, low_conf_ticks: int = 1) -> State:
+    """AUTO, SLOW or URGENT_STOP from obstacles in the corridor and path confidence.
+
+    low_conf_ticks = consecutive ticks (including this one) the path confidence has been low."""
+    slow = path_confidence_low(world, cfg) and low_conf_ticks >= cfg.supervisor.low_confidence_ticks
     for o in relevant_obstacles(world.obstacles, world.path.points, cfg):
         threshold = stop_threshold(o.cls, world.speed_mps, cfg)
         if o.y <= threshold:
@@ -38,8 +44,10 @@ def assess(world: World, cfg: Config) -> State:
 
 
 def step(state: State, world: World, rc: RcInput, now: float, cfg: Config,
-         fault_since: Optional[float] = None, stop_request: bool = False) -> State:
-    """Next state. fault_since is when the current FAULT began (None if not in FAULT)."""
+         fault_since: Optional[float] = None, stop_request: bool = False,
+         low_conf_ticks: int = 1) -> State:
+    """Next state. fault_since is when the current FAULT began (None if not in FAULT).
+    low_conf_ticks counts consecutive low-path-confidence ticks, this one included."""
     if state == State.DISARMED:
         if not rc_lost(rc, now, cfg) and rc.arm and not rc.mode_auto:
             return State.MANUAL
@@ -58,7 +66,7 @@ def step(state: State, world: World, rc: RcInput, now: float, cfg: Config,
     if state == State.MANUAL:
         if stale or rc.allowed_auto is False:
             return State.MANUAL
-        return assess(world, cfg)
+        return assess(world, cfg, low_conf_ticks)
 
     # AUTO, SLOW or FAULT with the switch on AUTO
     if rc.allowed_auto is False:
@@ -68,7 +76,7 @@ def step(state: State, world: World, rc: RcInput, now: float, cfg: Config,
                 and now - fault_since >= cfg.timeouts.fault_escalate_s:
             return State.URGENT_STOP
         return State.FAULT
-    return assess(world, cfg)
+    return assess(world, cfg, low_conf_ticks)
 
 
 class Supervisor:
@@ -78,9 +86,11 @@ class Supervisor:
         self.cfg = cfg
         self.state = initial
         self.fault_since: Optional[float] = None
+        self.low_conf_ticks = 0
 
     def run(self, world: World, rc: RcInput, now: float, stop_request: bool = False) -> State:
-        new = step(self.state, world, rc, now, self.cfg, self.fault_since, stop_request)
+        self.low_conf_ticks = self.low_conf_ticks + 1 if path_confidence_low(world, self.cfg) else 0
+        new = step(self.state, world, rc, now, self.cfg, self.fault_since, stop_request, self.low_conf_ticks)
         if new == State.FAULT and self.state != State.FAULT:
             self.fault_since = now
         elif new != State.FAULT:

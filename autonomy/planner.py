@@ -2,9 +2,11 @@
 
 Cones: split left (x < 0) / right (x >= 0), sort each side by distance ahead, pair by rank,
 and take midpoints. Cones without a partner (or a whole missing side) are offset half the
-course width toward the center. No cones and no lane -> confidence 0.
+course width toward the center.
+
+Priority: cones on both sides > lane center line > one-sided cones > nothing (confidence 0).
 """
-from typing import List, Optional
+from typing import List, Optional, Sequence
 
 import numpy as np
 
@@ -42,29 +44,31 @@ def cone_path(obstacles: List[Obstacle], cfg: Config) -> Path:
     return Path(_with_origin(np.vstack([mids, extra])), confidence, "cones")
 
 
-def lane_path(lane_center: Optional[np.ndarray], lane_confidence: float) -> Path:
-    if lane_center is None or len(lane_center) < 2 or lane_confidence <= 0:
+def lane_path_from_poly(coeffs: Optional[Sequence[float]], confidence: float, cfg: Config) -> Path:
+    """Lane center fit x = a*y^2 + b*y + c (meters, car frame; lane_detection's LaneResult.center)
+    sampled from lane_sample_start_m out to the controller's longest lookahead."""
+    if coeffs is None or confidence <= 0:
         return Path()
-    pts = np.asarray(lane_center, dtype=float).reshape(-1, 2)
-    return Path(pts[np.argsort(pts[:, 1], kind="stable")], float(lane_confidence), "lane")
+    p = cfg.planner
+    ys = np.arange(p.lane_sample_start_m, cfg.control.ld_max_m + p.lane_sample_step_m / 2, p.lane_sample_step_m)
+    xs = np.polyval(np.asarray(coeffs, dtype=float), ys)
+    return Path(np.column_stack([xs, ys]), float(confidence), "lanes")
 
 
-def plan(obstacles: List[Obstacle], cfg: Config,
-         lane_center: Optional[np.ndarray] = None, lane_confidence: float = 0.0) -> Path:
+def plan(obstacles: List[Obstacle], cfg: Config, lane_path: Optional[Path] = None) -> Path:
     cones = cone_path(obstacles, cfg)
-    lane = lane_path(lane_center, lane_confidence)
-    first, second = (lane, cones) if cfg.planner.prefer == "lane" else (cones, lane)
-    if first.confidence > 0:
-        return first
-    return second
+    if cones.source == "cones":                      # cones on both sides
+        return cones
+    if lane_path is not None and lane_path.confidence > 0 and len(lane_path.points):
+        return lane_path
+    return cones                                     # one-sided cones, or nothing
 
 
 class Planner:
-    """Donkey-style part: run(obstacles, lane_center, lane_confidence) -> Path."""
+    """Donkey-style part: run(obstacles, lane_path) -> Path."""
 
     def __init__(self, cfg: Config):
         self.cfg = cfg
 
-    def run(self, obstacles: List[Obstacle], lane_center: Optional[np.ndarray] = None,
-            lane_confidence: float = 0.0) -> Path:
-        return plan(obstacles, self.cfg, lane_center, lane_confidence)
+    def run(self, obstacles: List[Obstacle], lane_path: Optional[Path] = None) -> Path:
+        return plan(obstacles, self.cfg, lane_path)
